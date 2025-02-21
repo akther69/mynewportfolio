@@ -1,107 +1,23 @@
-#pro1{
-    animation: load1 5s normal forwards;
-    background-color: #2E3944;
-  }
-  @keyframes load1{
-    0%{
-      width:0%
-    }
-    100%{
-      width: 85%;
-    }
-  }
-  #pro2{
-    animation: load2 5s normal forwards;
-    background-color: #2E3944;
-  }
-  @keyframes load2{
-    0%{
-      width:0%
-    }
-    100%{
-      width: 80%;
-    }
-  }
-  #pro3{
-    animation: load3 5s normal forwards;
-    background-color: #2E3944;
-  }
-  @keyframes load3{
-    0%{
-      width:0%
-    }
-    100%{
-      width: 75%;
-    }
-  }
-  #pro4{
-    animation: load4 5s normal forwards;
-    background-color: #2E3944;
-  }
-  @keyframes load4{
-    0%{
-      width:0%
-    }
-    100%{
-      width: 85%;
-    }
-  }
-  #pro5{
-    animation: load5 5s normal forwards;
-    background-color: #2E3944;
-  }
-  @keyframes load5{
-    0%{
-      width:0%
-    }
-    100%{
-      width: 80%;
-    }
-  }
-  #pro6{
-    animation: load4 5s normal forwards;
-    background-color: #2E3944;
-  }
-  @keyframes load4{
-    0%{
-      width:0%
-    }
-    100%{
-      width: 85%;
-    }
-  }
-  #pro7{
-    animation: load3 5s normal forwards;
-    background-color: #2E3944;
-  }
-  @keyframes load3{
-    0%{
-      width:0%
-    }
-    100%{
-      width: 75%;
-    }
-  }
-
-
-
-  #imgtv {
-    height: 450px;
-    width: 600px;
-}
 #videocontainer{
-    margin-top: 60px;
     position: relative;
      background-image: url(C:\Users\abdul\Desktop\myportfolio\profile\portfolio\src\images\laptop.png);
      background-size: contain;
      background-repeat: no-repeat;
      width: 500px;
      height: 400px;
+     
 }
 video{
     position: absolute;
-    top: 14%;
+    top: 10%;
     left: 18%;
     width: 66%;
-    height: 52%;
+    height: 56%;
+    border-radius: 5%;
 }
+
+.content {
+  max-width: 700px;
+  margin-right: 100px;
+}
+
