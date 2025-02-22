@@ -34,7 +34,7 @@ function Index() {
 
 
     {/* into  */}
-    <section style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}} className='bg-dark'>
+    <section style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#27374d"}}>
         <div className="container">
             <div className="row">
                 <h3 className='text-center text-light' style={{ letterSpacing: "0.1em", lineHeight: "4rem",fontSize: "4.5rem",fontWeight: "bold"}}>👋,I'm SUHAIB AKTHER S</h3>
@@ -43,11 +43,48 @@ function Index() {
         </div>
     </section>
 
+
+    {/* aboutme */}
+    <section style={{ height: "100vh",backgroundColor:"#526d82"}}>
+      <div className="container">
+        <div className="row">
+          <h1 className='text-center mt-5 text-light'>About Me</h1>
+          <h5 className='text-center text-light my-5'>Discover more about who I am, what I do, and the programming and technological skills I bring to the table.</h5>
+        </div>
+        <div className="container p-5">
+          <div className="row">
+          <div className="col-6">
+            <h1 className='text-light'>Know more about me</h1>
+            <p className='text-light'>I’m a <b>Python-Django full-stack developer from Nilgiris, Tamil Nadu</b>, with a BE in Computer Science and experience building dynamic, user-friendly web applications. I focus on creating scalable back-end systems using Django and Django REST Framework and designing responsive front-end interfaces with HTML, CSS, and Tailwind CSS. I’ve worked on projects like e-commerce platforms and task management tools, which have helped me strengthen my problem-solving skills and learn about building real-world applications.
+               Right now, I’m working as an RPA Developer at IntelliJohn Labs in Kochi. I use UiPath to automate repetitive processes, making workflows faster and more efficient. This role has been exciting because I get to combine my love for technology with practical automation solutions.
+               I’m always looking to learn new things and take on projects that challenge me to grow while making an impact.</p>
+               <div>
+                <button className='btn btn-light'>Contact</button>
+               </div>
+          </div>
+          <div className="col-1"></div>
+          <div className="col-5">
+            <h2 className='text-light'>Skills</h2>
+            <button className='btn btn-light me-2 my-2'>Python</button>
+            <button className='btn btn-light me-2 my-2'>Django</button>
+            <button className='btn btn-light me-2 my-2'>Django rest FrameWork</button>
+            <button className='btn btn-light me-2 my-2'>Html</button>
+            <button className='btn btn-light me-2 my-2'>Css</button>
+            <button className='btn btn-light me-2 my-2'>MySql</button>
+            <button className='btn btn-light me-2 my-2'>Bootstrap</button>
+            <button className='btn btn-light me-2 my-2'>React</button>
+            <button className='btn btn-light me-2 my-2'>JavaScript</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* timeline */}
 
-    <section>
+    <section style={{ height: "140vh", backgroundColor: "#9db2bf"}} className='p-5'>
     <div>
-      <h1 className='text-center'>Time Line</h1>
+      <h1 className='text-center text-light'>Time Line</h1>
       <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -90,45 +127,9 @@ function Index() {
     </div>
     </section>
 
-    {/* aboutme */}
-    <section style={{ backgroundColor: "#FE9E0C" }}>
-      <div className="container">
-        <div className="row">
-          <h1 className='text-center mt-5'>About Me</h1>
-          <h5 className='text-center'>Discover more about who I am, what I do, and the programming and technological skills I bring to the table.</h5>
-        </div>
-        <div className="container">
-          <div className="row">
-          <div className="col-6">
-            <h1>Know more about me</h1>
-            <p>I’m a <b>Python-Django full-stack developer from Nilgiris, Tamil Nadu</b>, with a BE in Computer Science and experience building dynamic, user-friendly web applications. I focus on creating scalable back-end systems using Django and Django REST Framework and designing responsive front-end interfaces with HTML, CSS, and Tailwind CSS. I’ve worked on projects like e-commerce platforms and task management tools, which have helped me strengthen my problem-solving skills and learn about building real-world applications.
-               Right now, I’m working as an RPA Developer at IntelliJohn Labs in Kochi. I use UiPath to automate repetitive processes, making workflows faster and more efficient. This role has been exciting because I get to combine my love for technology with practical automation solutions.
-               I’m always looking to learn new things and take on projects that challenge me to grow while making an impact.</p>
-               <div>
-                <button className='btn btn-warning'>Contact</button>
-               </div>
-          </div>
-          <div className="col-1"></div>
-          <div className="col-5">
-            <h2>Skills</h2>
-            <button className='btn btn-warning me-2 my-2'>Python</button>
-            <button className='btn btn-warning me-2 my-2'>Django</button>
-            <button className='btn btn-warning me-2 my-2'>Django rest FrameWork</button>
-            <button className='btn btn-warning me-2 my-2'>Html</button>
-            <button className='btn btn-warning me-2 my-2'>Css</button>
-            <button className='btn btn-warning me-2 my-2'>MySql</button>
-            <button className='btn btn-warning me-2 my-2'>Bootstrap</button>
-            <button className='btn btn-warning me-2 my-2'>React</button>
-            <button className='btn btn-warning me-2 my-2'>JavaScript</button>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
 
     {/* project */}
-    <section>
+    <section style={{ backgroundColor: "#dde6ed"}}>
       <div className="container">
         <div className="row">
           <h1 className='text-center my-5'>Projects</h1>
