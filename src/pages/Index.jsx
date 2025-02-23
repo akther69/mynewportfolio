@@ -5,6 +5,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons"; 
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { color } from 'framer-motion';
 
 
 
@@ -48,14 +49,14 @@ function Index() {
     <section style={{ height: "100vh",backgroundColor:"#526d82"}}>
       <div className="container">
         <div className="row">
-          <h1 className='text-center mt-5 text-light'>About Me</h1>
+          <h1 className='text-center mt-5 text-light' style={{ letterSpacing: "0.1em", lineHeight: "4rem",fontSize: "4.5rem",fontWeight: "bold"}}>About Me</h1>
           <h5 className='text-center text-light my-5'>Discover more about who I am, what I do, and the programming and technological skills I bring to the table.</h5>
         </div>
         <div className="container p-5">
           <div className="row">
           <div className="col-6">
             <h1 className='text-light'>Know more about me</h1>
-            <p className='text-light'>I’m a <b>Python-Django full-stack developer from Nilgiris, Tamil Nadu</b>, with a BE in Computer Science and experience building dynamic, user-friendly web applications. I focus on creating scalable back-end systems using Django and Django REST Framework and designing responsive front-end interfaces with HTML, CSS, and Tailwind CSS. I’ve worked on projects like e-commerce platforms and task management tools, which have helped me strengthen my problem-solving skills and learn about building real-world applications.
+            <p className='text-light ' style={{ fontFamily: "'Space Grotesk', sans-serif" }}>I’m a <b>Python-Django full-stack developer from Nilgiris, Tamil Nadu</b>, with a BE in Computer Science and experience building dynamic, user-friendly web applications. I focus on creating scalable back-end systems using Django and Django REST Framework and designing responsive front-end interfaces with HTML, CSS, and Tailwind CSS. I’ve worked on projects like e-commerce platforms and task management tools, which have helped me strengthen my problem-solving skills and learn about building real-world applications.
                Right now, I’m working as an RPA Developer at IntelliJohn Labs in Kochi. I use UiPath to automate repetitive processes, making workflows faster and more efficient. This role has been exciting because I get to combine my love for technology with practical automation solutions.
                I’m always looking to learn new things and take on projects that challenge me to grow while making an impact.</p>
                <div>
@@ -84,12 +85,13 @@ function Index() {
 
     <section style={{ height: "140vh", backgroundColor: "#9db2bf"}} className='p-5'>
     <div>
-      <h1 className='text-center text-light'>Time Line</h1>
+      <h1 className='text-center p-3' style={{color: "#2a3335", letterSpacing: "0.1em", lineHeight: "4rem",fontSize: "4.5rem",fontWeight: "bold"}}>Time Line</h1>
       <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2024-05-22"
-              iconStyle={{ background: "#fe9e0c", color: "#fff" }}
+              iconStyle={{ background: "#2a3335", color: "#2a3335" }}
+              contentStyle={{ color: "#2a3335"}}
             >
               <h3 className="vertical-timeline-element-title">Graduated; B.E in Computer Science And Engineering</h3>
               <p>Hindusthan College of Engineering And Technology Coimbatore</p>
@@ -98,7 +100,9 @@ function Index() {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2024-03-21"
-              iconStyle={{ background: "#fe9e0c", color: "#fff" }}
+              iconStyle={{ background: "#2a3335", color: "#fff" }}
+              contentStyle={{ color: "#2a3335"}}
+
             >
               <h3 className="vertical-timeline-element-title">Started Internship as Python-web Development Expert</h3>
               <p>Joined Luminar Technolab</p>
@@ -106,22 +110,28 @@ function Index() {
       
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2024-11-18"
-              iconStyle={{ background: "#fe9e0c", color: "#fff" }}
+              date ="2024-11-18"
+              iconStyle={{ background: "#2a3335", color: "#fff" }}
             >
               <h3 className="vertical-timeline-element-title">Completed Internship</h3>
               <p>Luminar Technolab</p>
             </VerticalTimelineElement>
+
+            
       
       
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2024-11-21"
-              iconStyle={{ background: "#fe9e0c", color: "#fff" }}
+              iconStyle={{ background: "#2a3335",  }}
+              contentStyle={{ color: "#2a3335"}}
+
             >
-              <h3 className="vertical-timeline-element-title">Placed as RPA Developer</h3>
-              <p>Joined Intellijohn Labs</p>
+              <h3 className="vertical-timeline-element-title" style={{color:"#2a3335"}}>Joined as RPA Developer</h3>
+              <p>Intellijohn Labs</p>
             </VerticalTimelineElement>
+
+            
       
           </VerticalTimeline>
     </div>
@@ -132,7 +142,7 @@ function Index() {
     <section style={{ backgroundColor: "#dde6ed"}}>
       <div className="container">
         <div className="row">
-          <h1 className='text-center my-5'>Projects</h1>
+          <h1 className='text-center my-5' style={{ letterSpacing: "0.1em", lineHeight: "4rem",fontSize: "4.5rem",fontWeight: "bold"}}>Projects</h1>
           <div className="col-6">
           <div id="videocontainer">
           <video controls height="500px" width="300px" autoPlay loop muted>
@@ -205,7 +215,7 @@ function Index() {
         <div className="row">
           <div className="col-4"></div>
           <div className="col-4 text-center">
-            <h1 className='text-center my-3'>Contact Details</h1>
+            <h1 className='text-center my-3' style={{ letterSpacing: "0.1em", lineHeight: "2rem",fontSize: "2.5rem",fontWeight: "bold"}}>Contact Details</h1>
           <div className="flex space-x-4 mt-5">
       <a href="https://www.linkedin.com/in/suhaib-akther-s-baa753233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKTmeq42WTQ%2BnuY7ythGSuA%3D%3D" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} size="2x" className="mx-2 text-primary hover:text-blue-800" />
