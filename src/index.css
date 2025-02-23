@@ -21,3 +21,11 @@ video{
   margin-right: 100px;
 }
 
+button {
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
