@@ -1,6 +1,6 @@
 #videocontainer{
     position: relative;
-     background-image: url("./public/images/laptop.png");
+     background-image: url("/images/laptop.png");
      background-size: contain;
      background-repeat: no-repeat;
      width: 500px;

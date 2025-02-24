@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/mynewportfolio/", // Ensure this matches your repo name!
+  base: "/mynewportfolio/",
   build: {
     outDir: "dist",
-    assetsDir: "assets", // Organizes assets inside /dist
-  },
+    assetsInclude: ['**/*.mp4', '**/*.pdf'] // Explicitly include video/pdf assets
+  }
 });
