@@ -183,25 +183,27 @@ function Index() {
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-              <source src="./public/video/VenusFancy.mp4" type="video/mp4" />
+          <source src="/mynewportfolio/videos/VenusFancy.mp4" type="video/mp4" />
+
           </video>
           </div>
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-              <source src="./public/video/To_do.mp4" type="video/mp4" />
+          <source src="/mynewportfolio/videos/To_do.mp4" type="video/mp4" />
+
           </video>
           </div>
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-              <source src="./public/video/Expense Manager.mp4" type="video/mp4" />
+          <source src="/mynewportfolio/videos/ExpenseManager.mp4" type="video/mp4" />
           </video>
           </div>
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-              <source src="./public/video/Netflix Clone.mp4" type="video/mp4" />
+          <source src="/mynewportfolio/videos/NetflixClone.mp4" type="video/mp4" />
           </video>
           </div>
 
@@ -250,7 +252,7 @@ function Index() {
     <section>
       <div className='text-center'>
       <h3 className='text-center p-3' style={{fontFamily: "'Poppins', sans-serif"}}>Thanks for scrolling !  🙏✨</h3>
-      <a href="./public/pdf/suhaib_akther_s_resume.pdf"><button className='btn btn-outline-primary mb-5' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Download Resume</button>
+      <a href="/mynewportfolio/pdf/suhaib_akther_s_resume.pdf" download><button className='btn btn-outline-primary mb-5' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Download Resume</button>
       </a>
       </div>
     </section>
