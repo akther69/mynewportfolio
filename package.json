@@ -4,13 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://akther69.github.io/mynewportfolio",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && rm -rf dist/.git",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
