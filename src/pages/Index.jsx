@@ -22,15 +22,20 @@ function Index() {
     <div>
 
       {/* navbar */}
+
       <Navbar id='navbar'  bg="light" data-bs-theme="light">
         <Container>
           <Nav>
           <Nav.Link href="#profile">
+            {/* to set profile photo on navbar */}
+
             <img src="./src/images/myphoto.jpeg (1).jpg" alt="Profile" className="rounded-circle" style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
             <label className='mx-3' style={{fontFamily: "'Poppins', sans-serif",fontWeight: "bold"}}>SUHAIB AKTHER S</label>
           </Nav.Link>
         </Nav>
           <Nav className="">
+            {/* setting nav bar title */}
+
           <Nav.Link href="#home" className='me-5 mx-2 text-dark' style={{fontFamily: "'Poppins', sans-serif",fontWeight: "bold"}}>HOME</Nav.Link>
             <Nav.Link href="#aboutme" className='me-5 mx-2 text-dark' style={{fontFamily: "'Poppins', sans-serif",fontWeight: "bold"}}>ABOUT ME</Nav.Link>
             <Nav.Link href="#mytimeline" className='me-5 mx-2 text-dark' style={{fontFamily: "'Poppins', sans-serif",fontWeight: "bold"}}>MY TIME LINE</Nav.Link>
@@ -47,14 +52,21 @@ function Index() {
             <div className="row">
                 <h3 className='text-center text-light' style={{ letterSpacing: "0.1em", lineHeight: "5rem",fontSize: "4.5rem",fontWeight: "bold"}}>👋,I'm SUHAIB AKTHER S</h3>
                 <h6 className="text-center mt-5 text-light mb-3" style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>I’m a Python-Django full-stack developer, building web apps with clean and efficient code.</h6>
+                
+                {/* creating linkedin icon */}
                 <div className='text-center mt-3'>
-                <button className='btn btn-light rounded me-2'>
-                <a href="https://www.linkedin.com/in/suhaib-akther-s-baa753233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKTmeq42WTQ%2BnuY7ythGSuA%3D%3D" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size="1x" className="mx-2 text-dark hover:text-blue-800" /></a>LinkedIn
-                </button>
-                <button className='btn btn-light me-2'><a href="https://github.com/akther69" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size="1x" className="mx-2 text-dark hover:text-gray-700" /></a>GitHub</button>
-                <button className='btn btn-light'><a href="mailto:ssuhaibakther12@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} size="1x" className="mx-2 text-dark hover:text-red-800" /></a>Mail</button>
+                <a href="https://www.linkedin.com/in/suhaib-akther-s-baa753233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKTmeq42WTQ%2BnuY7ythGSuA%3D%3D" target="_blank" rel="noopener noreferrer"><button className='btn btn-light rounded me-2'><FontAwesomeIcon icon={faLinkedin} size="1x" className="mx-2 text-dark hover:text-blue-800" />LinkedIn</button>
+                </a>
+                
+                {/* creating github icon */}
+                <a href="https://github.com/akther69" target="_blank" rel="noopener noreferrer"><button className='btn btn-light me-2'><FontAwesomeIcon icon={faGithub} size="1x" className="mx-2 text-dark hover:text-gray-700" />GitHub</button></a>
+
+                {/* creating mail icon */}
+                <a href="mailto:ssuhaibakther12@gmail.com" target="_blank" rel="noopener noreferrer"><button className='btn btn-light'><FontAwesomeIcon icon={faEnvelope} size="1x" className="mx-2 text-dark hover:text-red-800" />Mail</button></a>
                 </div>
             </div>
+
+            {/* two button to direct up and down */}
             <button onClick={scrollToTop} className="btn btn-dark up-button"><FontAwesomeIcon icon={faArrowUp} /></button>
             <button onClick={scrollToContact} className="btn btn-dark down-button"><FontAwesomeIcon icon={faArrowDown} /></button>
         </div>
@@ -72,6 +84,8 @@ function Index() {
           <div className="row">
           <div className="col-6">
             <h1 className='text-light' style={{fontFamily: "'Poppins', sans-serif"}}><b>Know more about me</b></h1>
+
+            {/* my details */}
             <p className='text-light ' style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em",lineHeight:"2"}}>I'm a Python-Django Full Stack Developer from Nilgiris, Tamil Nadu, with a BE in Computer Science. I specialize in building dynamic web applications, focusing on scalable back-end systems with Django and responsive front-end interfaces. My experience includes working on various projects that have strengthened my problem-solving skills. Currently, I work as an RPA Developer at IntelliJohn Labs in Kochi, leveraging UiPath to automate workflows and optimize processes. Passionate about continuous learning, I thrive on tackling challenging projects that drive growth and create meaningful impact.</p>
                <div>
                 <a href="#contactdetails"><button className='btn btn-light'>Contact</button></a>
@@ -81,6 +95,8 @@ function Index() {
           <div className="col-1"></div>
           <div className="col-5">
             <h2 className='text-light' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}><b>Skills</b></h2>
+
+            {/* my skills */}
             <button className='btn btn-light me-2 my-2 p-3 px-3' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Python</button>
             <button className='btn btn-light me-2 my-2 p-3 px-3' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Django</button>
             <button className='btn btn-light me-2 my-2 p-3 px-3' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Html</button>
@@ -99,11 +115,13 @@ function Index() {
       </div>
     </section>
 
-    {/* timeline */}
 
+    {/* timeline */}
     <section id='mytimeline' style={{ height: "150vh", backgroundColor: "#9db2bf"}} className='p-4'>
     <div>
       <h1 className='text-center p-4' style={{color: "#2a3335", letterSpacing: "0.1em", lineHeight: "4rem",fontSize: "4.5rem",fontWeight: "bold"}}>My Time Line</h1>
+
+      {/* created time line using react time line  */}
       <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -134,9 +152,6 @@ function Index() {
               <h3 className="vertical-timeline-element-title" style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Completed Internship</h3>
               <p style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Luminar Technolab</p>
             </VerticalTimelineElement>
-
-            
-      
       
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -148,9 +163,6 @@ function Index() {
               <h3 className="vertical-timeline-element-title" style={{color:"#2a3335",fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Joined as RPA Developer</h3>
               <p style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Intellijohn Labs</p>
             </VerticalTimelineElement>
-
-            
-      
           </VerticalTimeline>
     </div>
     </section>
@@ -162,6 +174,7 @@ function Index() {
         <div className="row">
           <h1 className='text-center my-5' style={{ letterSpacing: "0.1em", lineHeight: "4rem",fontSize: "4.5rem",fontWeight: "bold"}}>Projects</h1>
           <div className="col-6">
+            {/* the lapto image is set on index.css and the video size control are set in the same file */}
           <div id="videocontainer">
           <video controls height="500px" width="300px" autoPlay loop muted>
               <source src="./src/video\Pix & Words.mp4" type="video/mp4" />
@@ -195,6 +208,8 @@ function Index() {
           </div>
           <div className="col-6">
             <div   style={{ marginTop: '60px' ,fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>
+
+              {/* this coloumn explain the project and there will be a button to accesss github */}
               <h1>Pix & Words</h1>
               <p>Pix & Words is a social media platform where users can share images, videos, and text posts. It features likes, comments, real-time updates, and customizable profiles for a personalized and engaging experience.</p>
               <a href="https://github.com/akther69/pix-words.git" target="_blank" rel="noopener noreferrer">
@@ -232,7 +247,6 @@ function Index() {
       </div>
 
       {/* resume download */}
-
     <section>
       <div className='text-center'>
       <h3 className='text-center p-3' style={{fontFamily: "'Poppins', sans-serif"}}>Thanks for scrolling !  🙏✨</h3>
@@ -243,37 +257,36 @@ function Index() {
     </section>
 
 
-
-
-
     {/* contact info */}
-
-
     <section id='contactdetails'>
       <div className="container my-5">
         <div className="row">
           <div className="col-4"></div>
           <div className="col-4 text-center">
             <h1 className='text-center my-3' style={{ letterSpacing: "0.1em", lineHeight: "2rem",fontSize: "2.5rem",fontWeight: "bold"}}>Contact Details</h1>
+
+            {/* linkedin icon */}
           <div className="flex space-x-4 mt-5">
       <a href="https://www.linkedin.com/in/suhaib-akther-s-baa753233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKTmeq42WTQ%2BnuY7ythGSuA%3D%3D" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} size="2x" className="mx-2 text-primary hover:text-blue-800" />
       </a>
 
+      {/* github icon */}
       <a href="https://github.com/akther69" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} size="2x" className="mx-2 text-dark hover:text-gray-700" />
       </a>
 
+      {/* mail icon */}
       <a href="mailto:ssuhaibakther12@gmail.com" target="_blank" rel="noopener noreferrer">
-  <FontAwesomeIcon icon={faEnvelope} size="2x" className="mx-2 text-secondary hover:text-red-800" />
-</a>
+      <FontAwesomeIcon icon={faEnvelope} size="2x" className="mx-2 text-secondary hover:text-red-800" />
+      </a>
 
-
-
+      {/* phone icon */}
       <a href="tel:+917598488180">
         <FontAwesomeIcon icon={faPhone} size="2x" className="mx-2 text-primary hover:text-green-800" />
       </a>
 
+      {/* whatsapp icon */}
       <a href="https://wa.me/qr/XMZHBPXILTBTF1" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faWhatsapp} size="2x" className="mx-2 text-success hover:text-green-700" />
       </a>
@@ -284,11 +297,6 @@ function Index() {
       </div>
 
     </section>
-
-
-    
-
-
     </div>
   )
 }
