@@ -177,32 +177,32 @@ function Index() {
             {/* the lapto image is set on index.css and the video size control are set in the same file */}
           <div id="videocontainer">
           <video controls height="500px" width="300px" autoPlay loop muted>
-          <source src="/video/Pix & Words.mp4" type="video/mp4" />          </video>
+          <source src={import.meta.env.BASE_URL+"/video/Pix & Words.mp4"} type="video/mp4" />          </video>
           </div>
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-          <source src="/video/VenusFancy.mp4" type="video/mp4" />
+          <source src={import.meta.env.BASE_URL+"/video/VenusFancy.mp4"} type="video/mp4" />
 
           </video>
           </div>
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-          <source src="/video/To_do.mp4" type="video/mp4" />
+          <source src={import.meta.env.BASE_URL+"/video/To_do.mp4"} type="video/mp4" />
 
           </video>
           </div>
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-          <source src="/video/Expense Manager.mp4" type="video/mp4" />
+          <source src={import.meta.env.BASE_URL+"/video/Expense Manager.mp4"} type="video/mp4" />
           </video>
           </div>
 
           <div id="videocontainer">
           <video controls height="600px" width="300px" autoPlay loop muted>
-          <source src="/video/Netflix Clone.mp4" type="video/mp4" />
+          <source src={import.meta.env.BASE_URL+"/video/Netflix Clone.mp4"} type="video/mp4" />
           </video>
           </div>
 
@@ -251,7 +251,7 @@ function Index() {
     <section>
       <div className='text-center'>
       <h3 className='text-center p-3' style={{fontFamily: "'Poppins', sans-serif"}}>Thanks for scrolling !  🙏✨</h3>
-      <a href="/pdf/suhaib_akther_s_resume.pdf" download><button className='btn btn-outline-primary mb-5' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Download Resume</button>
+      <a href={import.meta.env.BASE_URL+"/pdf/suhaib_akther_s_resume.pdf"} download><button className='btn btn-outline-primary mb-5' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Download Resume</button>
       </a>
       </div>
     </section>
