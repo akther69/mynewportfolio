@@ -29,7 +29,7 @@ function Index() {
           <Nav.Link href="#profile">
             {/* to set profile photo on navbar */}
 
-            <img src={`${import.meta.env.BASE_URL}images/myphoto.jpg`} alt="Profile"  className="rounded-circle" style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
+            <img src="/images/myphoto.jpg" alt="Profile"  className="rounded-circle" style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
             <label className='mx-3' style={{fontFamily: "'Poppins', sans-serif",fontWeight: "bold"}}>SUHAIB AKTHER S</label>
           </Nav.Link>
         </Nav>
