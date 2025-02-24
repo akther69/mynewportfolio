@@ -29,7 +29,7 @@ function Index() {
           <Nav.Link href="#profile">
             {/* to set profile photo on navbar */}
 
-            <img src="/mynewportfolio/images/myphoto.jpg" alt="Profile" className="rounded-circle" style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
+            <img src={`${import.meta.env.BASE_URL}images/myphoto.jpg`} alt="Profile"  className="rounded-circle" style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
             <label className='mx-3' style={{fontFamily: "'Poppins', sans-serif",fontWeight: "bold"}}>SUHAIB AKTHER S</label>
           </Nav.Link>
         </Nav>
@@ -177,7 +177,7 @@ function Index() {
             {/* the lapto image is set on index.css and the video size control are set in the same file */}
           <div id="videocontainer">
           <video controls height="500px" width="300px" autoPlay loop muted>
-          <source src="/mynewportfolio/videos/PixWords.mp4"  type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}videos/PixWords.mp4`} type="video/mp4" />
           </video>
           </div>
 
@@ -252,7 +252,7 @@ function Index() {
     <section>
       <div className='text-center'>
       <h3 className='text-center p-3' style={{fontFamily: "'Poppins', sans-serif"}}>Thanks for scrolling !  🙏✨</h3>
-      <a href="/mynewportfolio/pdf/suhaib_akther_s_resume.pdf" download><button className='btn btn-outline-primary mb-5' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Download Resume</button>
+      <a href={`${import.meta.env.BASE_URL}pdf/suhaib_akther_s_resume.pdf`} download><button className='btn btn-outline-primary mb-5' style={{fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em"}}>Download Resume</button>
       </a>
       </div>
     </section>
