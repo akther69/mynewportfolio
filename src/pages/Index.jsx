@@ -177,8 +177,7 @@ function Index() {
             {/* the lapto image is set on index.css and the video size control are set in the same file */}
           <div id="videocontainer">
           <video controls height="500px" width="300px" autoPlay loop muted>
-          <source src={`${import.meta.env.BASE_URL}videos/PixWords.mp4`} type="video/mp4" />
-          </video>
+          <source src={`${import.meta.env.BASE_URL}videos/PixWords.mp4`} type="video/mp4" />          </video>
           </div>
 
           <div id="videocontainer">
