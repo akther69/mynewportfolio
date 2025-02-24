@@ -6,7 +6,7 @@ import { faLinkedin, faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-i
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { faArrowUp,faArrowDown } from "@fortawesome/free-solid-svg-icons"; 
-
+import photo1 from "/images/myphoto.jpg"
 
 
 
@@ -29,7 +29,7 @@ function Index() {
           <Nav.Link href="#profile">
             {/* to set profile photo on navbar */}
 
-            <img src="/images/myphoto.jpg" alt="Profile"  className="rounded-circle" style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
+            <img src={photo1} alt="Profile"  className="rounded-circle" style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
             <label className='mx-3' style={{fontFamily: "'Poppins', sans-serif",fontWeight: "bold"}}>SUHAIB AKTHER S</label>
           </Nav.Link>
         </Nav>
