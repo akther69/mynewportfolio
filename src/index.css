@@ -144,6 +144,7 @@ button:hover {
   .social-btn {
     padding: 5px 10px;
     font-size: 0.8rem;
+    margin-top: 25px;
   }
 }
 
@@ -508,8 +509,8 @@ button:hover {
   }
 
   .project-video {
-    top: 18%;
-    left: 18%;
+    top: 17%;
+    left: 23%;
     width: 66%;
     height: 63%;
   }
