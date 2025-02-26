@@ -527,13 +527,24 @@ button:hover {
   .project-video {
     top: 18%;
     left: 18%;
-    width: 63%;
+    width: 66%;
     height: 63%;
   }
 
 }
 
 @media (max-width: 480px) {
+  .video-display {
+    max-width: 300px;
+    padding-bottom: 45%; /* Adjust aspect ratio for mobile */
+  }
+
+  .project-video {
+    top: 18%;
+    left: 18%;
+    width: 56%;
+    height: 64%;
+  }
   .project-title {
     font-size: 2rem;
     line-height: 1.5rem;
