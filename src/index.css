@@ -1,20 +1,20 @@
-#videocontainer{
+/* #videocontainer{
     position: relative;
      background-image: url("/images/laptop.png");
      background-size: contain;
      background-repeat: no-repeat;
      width: 500px;
-     height: 400px;
+     height: 470px;
      
 }
-video{
-    position: absolute;
-    top: 10%;
-    left: 18%;
-    width: 66%;
-    height: 56%;
-    border-radius: 5%;
-}
+video {
+  position: absolute;
+  top: 16%;
+  left: 13%;
+  width: 66%;
+  height: 67%;
+  border-radius: 5%;
+} */
 
 .content {
   max-width: 700px;
@@ -69,3 +69,640 @@ button:hover {
   background-color: #555;
 }
 
+/* Base Styles */
+.home-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #27374d;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+.heading {
+  letter-spacing: 0.1em;
+  line-height: 5rem;
+  font-size: calc(2rem + 2.5vw);
+  font-weight: bold;
+}
+
+.subheading {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: calc(1rem + 0.5vw);
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 3rem;
+}
+
+.social-btn {
+  padding: 8px 16px;
+}
+
+/* Hover Effects for Icons */
+.hover\:text-blue-800:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.hover\:text-gray-700:hover {
+  color: #333; /* GitHub gray */
+}
+
+.hover\:text-red-800:hover {
+  color: #b91c1c; /* Mail red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    line-height: 3rem;
+    font-size: calc(1.5rem + 2vw);
+  }
+
+  .subheading {
+    margin-top: 2rem;
+    font-size: calc(0.9rem + 0.5vw);
+  }
+
+  .social-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .heading {
+    line-height: 2.5rem;
+    font-size: calc(1.2rem + 2vw);
+  }
+
+  .subheading {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .social-btn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* About Me Section */
+.aboutme-section {
+  height: 110vh;
+  background-color: #526d82;
+}
+
+.aboutme-title {
+  letter-spacing: 0.1em;
+  line-height: 4rem;
+  font-size: calc(2rem + 2.5vw);
+  font-weight: bold;
+}
+
+.aboutme-subtitle {
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutme-content {
+  padding: 5rem;
+}
+
+.aboutme-details {
+  padding-right: 15px; /* To balance spacing */
+}
+
+.aboutme-heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutme-text {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  margin-bottom:10px;
+}
+
+.skills-section {
+  padding-left: 15px; /* To balance spacing */
+}
+
+.skills-title {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-btn {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .aboutme-section {
+    height: auto; /* Allow height to adjust on smaller screens */
+    padding-bottom: 2rem;
+  }
+
+  .aboutme-content {
+    padding: 2rem;
+  }
+
+  .aboutme-details,
+  .skills-section {
+    padding: 0; /* Remove extra padding for smaller screens */
+  }
+
+  .col-lg-6,
+  .col-lg-5 {
+    flex: 0 0 100%; /* Stack columns vertically */
+    max-width: 100%;
+  }
+
+  .col-lg-1 {
+    display: none; /* Hide spacer column */
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme-title {
+    line-height: 3rem;
+    font-size: calc(1.5rem + 2vw);
+  }
+
+  .aboutme-subtitle {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .aboutme-text {
+    font-size: 0.9rem;
+  }
+
+  .skill-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme-title {
+    line-height: 2.5rem;
+    font-size: calc(1.2rem + 2vw);
+  }
+
+  .aboutme-subtitle {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+
+  .aboutme-text {
+    font-size: 0.85rem;
+  }
+
+  .skill-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Default styles are handled in the JSX, these are for responsiveness */
+@media (max-width: 768px) {
+  #mytimeline {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  #mytimeline h1 {
+    font-size: 2.5rem; /* Reduce heading size */
+    line-height: 3rem; /* Adjust line height */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .vertical-timeline-element-content {
+    padding: 1rem !important; /* Adjust content padding */
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.2rem; /* Adjust title size */
+  }
+
+  #mytimeline p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .vertical-timeline-element-date {
+    font-size: 0.8rem; /* Adjust date size */
+    padding: 0.5rem !important; /* Adjust date padding */
+  }
+
+  .vertical-timeline::before {
+    left: 15px !important; /* Adjust timeline line position */
+  }
+
+  .vertical-timeline-element-icon {
+    left: 0 !important; /* Adjust icon position */
+  }
+
+  .vertical-timeline-element-content {
+    margin-left: 40px !important; /* Adjust content margin */
+  }
+}
+
+@media (max-width: 480px) {
+  #mytimeline h1 {
+    font-size: 2rem; /* Further reduce for small screens */
+    line-height: 2.5rem;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1rem; /* Smaller title */
+  }
+
+  #mytimeline p {
+    font-size: 0.8rem; /* Smaller paragraph */
+  }
+}
+
+
+
+
+/* styles.css */
+
+/* Video Container and Video Styles */
+/* Video Container */
+.video-display {
+  position: relative;
+  background-image: url("/images/laptop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 500px; /* Maximum size for desktop */
+  height: 0;
+  padding-bottom: 30%; /* Maintain aspect ratio (500x470 ≈ 1:0.94) */
+  margin: 0 auto;
+}
+
+.project-video {
+  position: absolute;
+  top: 19%;
+  left: 18%;
+  width: 66%;
+  height: 58%;
+  object-fit: cover;
+}
+
+
+/* Project Section Styles */
+#project-section {
+  background-color: #dde6ed;
+  padding: 1rem; /* Matches p-3 */
+}
+
+.project-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-title {
+  text-align: center;
+  margin: 3rem 0; /* Matches my-5 */
+  letter-spacing: 0.1em;
+  line-height: 4rem;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.project-item {
+  display: flex;
+  margin-bottom: 1rem; /* Matches mb-5 */
+  align-items: flex-start;
+}
+
+.video-box {
+  flex: 0 0 50%;
+  padding-right: 20px;
+}
+
+.video-box .project-video {
+  max-height: 600px; /* Cap for larger screens */
+}
+
+.project-desc {
+  flex: 0 0 50%;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  margin-top: 60px;
+}
+
+.project-desc h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.project-desc p {
+  margin-bottom: 1.5rem;
+}
+
+.btn-github {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-github:hover {
+  background-color: #c82333;
+  color: white;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.text-middle {
+  text-align: center;
+}
+
+.text-middle h3 {
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem; /* Matches p-3 */
+}
+
+.btn-resume {
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  color: #007bff;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-resume:hover {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+
+/* Responsive Design for Project Section */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+  }
+
+  .video-box {
+    flex: 0 0 100%;
+    padding-right: 0;
+  }
+
+  .video-box .project-video {
+    max-height: 400px;
+  }
+
+  .project-desc {
+    flex: 0 0 100%;
+    margin-top: 0;
+  }
+
+  .project-desc h1 {
+    font-size: 1.5rem;
+  }
+
+  .video-display {
+    max-width: 300px;
+    padding-bottom: 45%; /* Adjust aspect ratio for mobile */
+  }
+
+  .project-video {
+    top: 18%;
+    left: 18%;
+    width: 66%;
+    height: 60%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+
+  .project-desc h1 {
+    font-size: 1.25rem;
+  }
+
+  .btn-github,
+  .btn-resume {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .video-display {
+    max-width: 300px;
+  }
+}
+
+  /* Force video controls visibility */
+  .project-video::-webkit-media-controls {
+    display: flex !important;
+  }
+
+
+
+
+.video-display {
+  background-color: #f0f0f0; /* Fallback color */
+  background-blend-mode: multiply;
+  animation: skeleton-loading 1s infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% { background-color: hsl(200, 20%, 80%) }
+  100% { background-color: hsl(200, 20%, 95%) }
+}
+
+
+
+
+
+
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Responsive container widths */
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+
+/* Row and column setup */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Desktop columns */
+@media (min-width: 768px) {
+  .col-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .col-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  
+  .text-center {
+      margin: 0 auto;
+      width: 100%;
+  }
+  
+  h1 {
+      font-size: 2rem !important;
+      margin: 1.5rem 0 !important;
+  }
+  
+  .flex {
+      justify-content: center;
+      gap: 1.5rem;
+  }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.space-x-4 {
+  gap: 1rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Color classes */
+.text-primary { color: #007bff; }
+.hover\:text-blue-800:hover { color: #1a478a; }
+.text-dark { color: #343a40; }
+.hover\:text-gray-700:hover { color: #4a5568; }
+.text-secondary { color: #6c757d; }
+.hover\:text-red-800:hover { color: #9b2c2c; }
+.hover\:text-green-800:hover { color: #276749; }
+.text-success { color: #28a745; }
+.hover\:text-green-700:hover { color: #2f855a; }
+
+
+/* index.css */
+.justify-center {
+  justify-content: center;
+}
