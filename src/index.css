@@ -99,15 +99,15 @@ button:hover {
 
 /* Hover Effects for Icons */
 .hover\:text-blue-800:hover {
-  color: #0077b5; /* LinkedIn blue */
+  color: #0077b5; 
 }
 
 .hover\:text-gray-700:hover {
-  color: #333; /* GitHub gray */
+  color: #333;
 }
 
 .hover\:text-red-800:hover {
-  color: #b91c1c; /* Mail red */
+  color: #b91c1c;
 }
 
 /* Responsive Design */
@@ -170,7 +170,7 @@ button:hover {
 }
 
 .aboutme-details {
-  padding-right: 15px; /* To balance spacing */
+  padding-right: 15px; 
 }
 
 .aboutme-heading {
@@ -189,7 +189,7 @@ button:hover {
 }
 
 .skills-section {
-  padding-left: 15px; /* To balance spacing */
+  padding-left: 15px; 
 }
 
 .skills-title {
@@ -213,7 +213,7 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 992px) {
   .aboutme-section {
-    height: auto; /* Allow height to adjust on smaller screens */
+    height: auto; 
     padding-bottom: 2rem;
   }
 
@@ -223,17 +223,17 @@ button:hover {
 
   .aboutme-details,
   .skills-section {
-    padding: 0; /* Remove extra padding for smaller screens */
+    padding: 0; 
   }
 
   .col-lg-6,
   .col-lg-5 {
-    flex: 0 0 100%; /* Stack columns vertically */
+    flex: 0 0 100%; 
     max-width: 100%;
   }
 
   .col-lg-1 {
-    display: none; /* Hide spacer column */
+    display: none; 
   }
 }
 
@@ -287,67 +287,64 @@ button:hover {
 /* Default styles are handled in the JSX, these are for responsiveness */
 @media (max-width: 768px) {
   #mytimeline {
-    height: auto; /* Allow height to adjust based on content */
-    padding: 1rem; /* Reduce padding on smaller screens */
+    height: auto; 
+    padding: 1rem;
   }
 
   #mytimeline h1 {
-    font-size: 2.5rem; /* Reduce heading size */
-    line-height: 3rem; /* Adjust line height */
-    padding: 1rem; /* Reduce padding */
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding: 1rem; 
   }
 
   .vertical-timeline-element-content {
-    padding: 1rem !important; /* Adjust content padding */
+    padding: 1rem !important;
   }
 
   .vertical-timeline-element-title {
-    font-size: 1.2rem; /* Adjust title size */
+    font-size: 1.2rem; 
   }
 
   #mytimeline p {
-    font-size: 0.9rem; /* Adjust paragraph size */
+    font-size: 0.9rem; 
   }
 
   .vertical-timeline-element-date {
-    font-size: 0.8rem; /* Adjust date size */
-    padding: 0.5rem !important; /* Adjust date padding */
+    font-size: 0.8rem; 
+    padding: 0.5rem !important;
   }
 
   .vertical-timeline::before {
-    left: 15px !important; /* Adjust timeline line position */
+    left: 15px !important; 
   }
 
   .vertical-timeline-element-icon {
-    left: 0 !important; /* Adjust icon position */
+    left: 0 !important; 
   }
 
   .vertical-timeline-element-content {
-    margin-left: 40px !important; /* Adjust content margin */
+    margin-left: 40px !important;
   }
 }
 
 @media (max-width: 480px) {
   #mytimeline h1 {
-    font-size: 2rem; /* Further reduce for small screens */
+    font-size: 2rem; 
     line-height: 2.5rem;
   }
 
   .vertical-timeline-element-title {
-    font-size: 1rem; /* Smaller title */
+    font-size: 1rem; 
   }
 
   #mytimeline p {
-    font-size: 0.8rem; /* Smaller paragraph */
+    font-size: 0.8rem;
   }
 }
 
 
 
 
-/* styles.css */
-
-/* Video Container and Video Styles */
 /* Video Container */
 .video-display {
   position: relative;
@@ -356,9 +353,9 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  max-width: 500px; /* Maximum size for desktop */
+  max-width: 500px; 
   height: 0;
-  padding-bottom: 30%; /* Maintain aspect ratio (500x470 ≈ 1:0.94) */
+  padding-bottom: 30%; 
   margin: 0 auto;
 }
 
@@ -375,7 +372,7 @@ button:hover {
 /* Project Section Styles */
 #project-section {
   background-color: #dde6ed;
-  padding: 1rem; /* Matches p-3 */
+  padding: 1rem; 
 }
 
 .project-wrapper {
@@ -385,7 +382,7 @@ button:hover {
 
 .project-title {
   text-align: center;
-  margin: 3rem 0; /* Matches my-5 */
+  margin: 3rem 0; 
   letter-spacing: 0.1em;
   line-height: 4rem;
   font-size: 4.5rem;
@@ -394,7 +391,7 @@ button:hover {
 
 .project-item {
   display: flex;
-  margin-bottom: 1rem; /* Matches mb-5 */
+  margin-bottom: 1rem; 
   align-items: flex-start;
 }
 
@@ -404,7 +401,7 @@ button:hover {
 }
 
 .video-box .project-video {
-  max-height: 600px; /* Cap for larger screens */
+  max-height: 600px; 
 }
 
 .project-desc {
@@ -450,7 +447,7 @@ button:hover {
 
 .text-middle h3 {
   font-family: 'Poppins', sans-serif;
-  padding: 1rem; /* Matches p-3 */
+  padding: 1rem; 
 }
 
 .btn-resume {
@@ -507,7 +504,7 @@ button:hover {
     width: 100%;
     max-width: 300px;
     margin-top: 80px;
-    padding-bottom: 45%; /* Adjust aspect ratio for mobile */
+    padding-bottom: 45%; 
     background-image: url("");
     border-radius: 10%;
   }
@@ -517,7 +514,7 @@ button:hover {
     left: 8%;
     width: 86%;
     height: 73%;
-    border-radius: 5%;
+    border-radius: 3%;
   }
 
 }
@@ -525,7 +522,7 @@ button:hover {
 @media (max-width: 480px) {
   .video-display {
     max-width: 300px;
-    padding-bottom: 45%; /* Adjust aspect ratio for mobile */
+    padding-bottom: 45%; 
     border-radius: 5%;
   }
 
@@ -534,7 +531,7 @@ button:hover {
     left: 13%;
     width: 74%;
     height: 83%;
-    border-radius: 5%;
+    border-radius: 3%;
   }
   .project-title {
     font-size: 2rem;
@@ -566,7 +563,7 @@ button:hover {
 
 
 .video-display {
-  background-color: #f0f0f0; /* Fallback color */
+  background-color: #f0f0f0; 
   background-blend-mode: multiply;
   animation: skeleton-loading 1s infinite alternate;
 }
