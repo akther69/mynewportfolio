@@ -508,6 +508,8 @@ button:hover {
     max-width: 300px;
     margin-top: 80px;
     padding-bottom: 45%; /* Adjust aspect ratio for mobile */
+    background-image: url("");
+    border-radius: 10%;
   }
 
   .project-video {
@@ -515,6 +517,7 @@ button:hover {
     left: 18%;
     width: 66%;
     height: 63%;
+    border-radius: 5%;
   }
 
 }
@@ -523,6 +526,7 @@ button:hover {
   .video-display {
     max-width: 300px;
     padding-bottom: 45%; /* Adjust aspect ratio for mobile */
+    border-radius: 5%;
   }
 
   .project-video {
@@ -530,6 +534,7 @@ button:hover {
     left: 25%;
     width: 54%;
     height: 63%;
+    border-radius: 5%;
   }
   .project-title {
     font-size: 2rem;
