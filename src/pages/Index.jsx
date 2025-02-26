@@ -41,7 +41,7 @@ function Index() {
               <Nav.Link href="#home" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>HOME</Nav.Link>
               <Nav.Link href="#aboutme" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>ABOUT ME</Nav.Link>
               <Nav.Link href="#mytimeline" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>MY TIME LINE</Nav.Link>
-              <Nav.Link href="#projects" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>PROJECTS</Nav.Link>
+              <Nav.Link href="#project-section" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>PROJECTS</Nav.Link>
               <Nav.Link href="#contactdetails" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>CONTACT DETAILS</Nav.Link>
             </Nav>
           </Navbar.Collapse>
