@@ -258,7 +258,7 @@ function Index() {
     </h1>
 
     {/* Project 1: Pix & Words */}
-    <div className="project-item flex mb-5">
+    <div className="project-item flex mb-3">
       <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
         <video className="project-video" controls autoPlay loop muted>
           <source src={import.meta.env.BASE_URL + "/video/Pix & Words.mp4"} type="video/mp4" />
@@ -276,7 +276,7 @@ function Index() {
     </div>
 
     {/* Project 2: Venus Fancy */}
-    <div className="project-item flex mb-5">
+    <div className="project-item flex mb-3">
       <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
         <video className="project-video" controls autoPlay loop muted>
           <source src={import.meta.env.BASE_URL + "/video/VenusFancy.mp4"} type="video/mp4" />
@@ -294,7 +294,7 @@ function Index() {
     </div>
 
     {/* Project 3: To-Do Web Application */}
-    <div className="project-item flex mb-5">
+    <div className="project-item flex mb-3">
       <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
         <video className="project-video" controls autoPlay loop muted>
           <source src={import.meta.env.BASE_URL + "/video/To_do.mp4"} type="video/mp4" />
@@ -312,7 +312,7 @@ function Index() {
     </div>
 
     {/* Project 4: Expense Manager */}
-    <div className="project-item flex mb-5">
+    <div className="project-item flex mb-3">
       <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
         <video className="project-video" controls autoPlay loop muted>
           <source src={import.meta.env.BASE_URL + "/video/Expense Manager.mp4"} type="video/mp4" />
@@ -330,7 +330,7 @@ function Index() {
     </div>
 
     {/* Project 5: Netflix Clone */}
-    <div className="project-item flex mb-5">
+    <div className="project-item flex mb-3">
       <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
         <video className="project-video" controls autoPlay loop muted>
           <source src={import.meta.env.BASE_URL + "/video/Netflix Clone.mp4"} type="video/mp4" />
