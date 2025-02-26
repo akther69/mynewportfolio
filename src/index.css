@@ -483,6 +483,9 @@ button:hover {
 
   .project-item {
     flex-direction: column;
+    flex-direction: column;
+    align-items: center; /* Centers content */
+    text-align: center;
   }
 
   .video-box {
@@ -496,7 +499,8 @@ button:hover {
 
   .project-desc {
     flex: 0 0 100%;
-    margin-top: 0;
+    width: 100%;
+    margin-top: 40px; 
   }
 
   .project-desc h1 {
@@ -504,7 +508,9 @@ button:hover {
   }
 
   .video-display {
+    width: 100%;
     max-width: 300px;
+    margin-top: 80px;
     padding-bottom: 45%; /* Adjust aspect ratio for mobile */
   }
 
@@ -525,7 +531,7 @@ button:hover {
 
   .project-video {
     top: 17%;
-    left: 24%;
+    left: 25%;
     width: 54%;
     height: 63%;
   }
@@ -546,6 +552,7 @@ button:hover {
 
   .video-display {
     max-width: 300px;
+    margin-top: 80px;
   }
 }
 
