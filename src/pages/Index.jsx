@@ -350,7 +350,7 @@ function Index() {
     <section>
       <div className="text-middle">
         <h3 className="text-middle p-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Thanks for scrolling!</h3>
-        <a href={import.meta.env.BASE_URL + "/pdf/suhaib_akther_s_resume.pdf"} download>
+        <a href={import.meta.env.BASE_URL + "/pdf/Suhaib_Akther_S.pdf"} download>
           <button className="btn-resume mb-5" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
             Download Resume
           </button>
