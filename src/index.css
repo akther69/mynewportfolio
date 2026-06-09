@@ -150,7 +150,7 @@ button:hover {
 
 /* About Me Section */
 .aboutme-section {
-  height: 110vh;
+  height: 115vh;
   background-color: #526d82;
 }
 
@@ -707,3 +707,77 @@ button:hover {
   justify-content: center;
 }
 
+.nav-item-custom {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  color: #1f2937 !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item-custom:hover {
+  color: #2563eb !important;
+  transform: translateY(-2px);
+}
+
+.nav-item-custom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.nav-item-custom:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wave-hand {
+  display: inline-block;
+  font-size: 2.5rem;
+  transform-origin: 70% 70%;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.contact-modern-btn {
+  background: linear-gradient(135deg, #ffffff, #dbeafe);
+  color: #111827;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-modern-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}

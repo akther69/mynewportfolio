@@ -21,43 +21,105 @@ function Index() {
   return (
     <div>
 
-      {/* navbar */}
 
-       {/* Navbar */}
-      <Navbar id='navbar' bg="light" data-bs-theme="light" expand="lg">
-        <Container>
-          <Navbar.Brand href="#profile">
-            <img
-              src={import.meta.env.BASE_URL + "/images/myphoto.jpg"}
-              alt="Profile"
-              className="rounded-circle"
-              style={{ width: "40px", height: "40px", objectFit: "cover" }}
-            />
-            <label className='mx-3' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>SUHAIB AKTHER S</label>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#home" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>HOME</Nav.Link>
-              <Nav.Link href="#aboutme" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>ABOUT ME</Nav.Link>
-              <Nav.Link href="#mytimeline" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>MY TIME LINE</Nav.Link>
-              <Nav.Link href="#project-section" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>PROJECTS</Nav.Link>
-              <Nav.Link href="#contactdetails" className='me-5 mx-2 text-dark' style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold" }}>CONTACT DETAILS</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+
+{/* Navbar */}
+<Navbar
+  id="navbar"
+  expand="lg"
+  fixed="top"
+  style={{
+    background: "rgba(255, 255, 255, 0.85)",
+    backdropFilter: "blur(15px)",
+    WebkitBackdropFilter: "blur(15px)",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
+    padding: "12px 0",
+    zIndex: "1000"
+  }}
+>
+  <Container>
+    <Navbar.Brand
+      href="#profile"
+      className="d-flex align-items-center"
+    >
+      <img
+        src={import.meta.env.BASE_URL + "/images/myphoto.jpg"}
+        alt="Profile"
+        className="rounded-circle"
+        style={{
+          width: "45px",
+          height: "45px",
+          objectFit: "cover",
+          border: "2px solid #3b82f6"
+        }}
+      />
+
+      <span
+        className="ms-3"
+        style={{
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: "700",
+          letterSpacing: "2px",
+          color: "#1f2937",
+          fontSize: "1rem"
+        }}
+      >
+        SUHAIB AKTHER S
+      </span>
+    </Navbar.Brand>
+
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="ms-auto">
+        <Nav.Link href="#home" className="nav-item-custom">
+          HOME
+        </Nav.Link>
+
+        <Nav.Link href="#aboutme" className="nav-item-custom">
+          ABOUT ME
+        </Nav.Link>
+
+        <Nav.Link href="#mytimeline" className="nav-item-custom">
+          MY TIMELINE
+        </Nav.Link>
+
+        <Nav.Link href="#project-section" className="nav-item-custom">
+          PROJECTS
+        </Nav.Link>
+
+        <Nav.Link href="#contactdetails" className="nav-item-custom">
+          CONTACT
+        </Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
 
 
     {/* into  */}
     <section id="home" className="home-section">
       <div className="container">
         <div className="row">
-          <h3 className="text-center text-light heading">
-            👋, I'm SUHAIB AKTHER S
-          </h3>
+          <h3
+  className="text-center text-light heading"
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "12px"
+  }}
+>
+  <span
+    className="wave-hand"
+    style={{ fontSize: "5rem" }}
+  >
+    👋
+  </span>
+  I'm SUHAIB AKTHER S
+</h3>
           <h6 className="text-center text-light subheading">
-            I’m a Python-Django full-stack developer, building web apps with clean and efficient code.
+            I’m a Python-Django full-stack developer and UiPath RPA developer, building web applications and automation solutions with clean and efficient code.
           </h6>
 
           {/* Social Media Buttons */}
@@ -100,64 +162,98 @@ function Index() {
     </section>
 
 
-    {/* aboutme */}
-    <section id="aboutme" className="aboutme-section">
-      <div className="container">
-        <div className="row">
-          <h1 className="text-center mt-5 text-light aboutme-title">
-            About Me
+{/* aboutme */}
+<section id="aboutme" className="aboutme-section"  style={{
+    paddingBottom: "250px"
+  }}>
+  <div className="container">
+
+    <div className="row">
+      <h1 className="text-center mt-5 text-light aboutme-title">
+        About Me
+      </h1>
+
+      <h5 className="text-center text-light mt-4 mb-3 aboutme-subtitle">
+        Discover more about who I am, what I do, and the programming and technological skills I bring to the table.
+      </h5>
+    </div>
+
+    <div className="container aboutme-content">
+
+      <div className="row">
+
+        {/* Left Side */}
+        <div className="col-lg-6 aboutme-details">
+          <h1 className="text-light aboutme-heading">
+            <b>Know More About Me</b>
           </h1>
-          <h5 className="text-center text-light mt-4 mb-3 aboutme-subtitle">
-            Discover more about who I am, what I do, and the programming and technological skills I bring to the table.
-          </h5>
+
+          <p className="text-light aboutme-text">
+            I'm a Python-Django Full Stack Developer from Nilgiris, Tamil Nadu,
+            with a BE in Computer Science. I specialize in building dynamic web
+            applications, focusing on scalable back-end systems with Django and
+            responsive front-end interfaces.
+
+            My experience includes working on various projects that have
+            strengthened my problem-solving skills. I also have experience as
+            a UiPath RPA Developer, leveraging automation technologies to
+            streamline workflows and optimize business processes.
+
+            Passionate about continuous learning, I thrive on tackling
+            challenging projects that drive growth and create meaningful impact.
+          </p>
         </div>
-        <div className="container aboutme-content">
-          <div className="row">
-            <div className="col-lg-6 aboutme-details">
-              <h1 className="text-light aboutme-heading">
-                <b>Know more about me</b>
-              </h1>
-              <p className="text-light aboutme-text">
-                I'm a Python-Django Full Stack Developer from Nilgiris, Tamil Nadu, with a BE in Computer Science. I specialize in building dynamic web applications, focusing on scalable back-end systems with Django and responsive front-end interfaces. My experience includes working on various projects that have strengthened my problem-solving skills. Currently, I work as an RPA Developer at IntelliJohn Labs in Kochi, leveraging UiPath to automate workflows and optimize processes. Passionate about continuous learning, I thrive on tackling challenging projects that drive growth and create meaningful impact.
-              </p>
-              <div>
-                <a href="#contactdetails">
-                  <button className="btn btn-light contact-btn">Contact</button>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-1"></div>
-            <div className="col-lg-5 skills-section">
-              <h2 className="text-light skills-title">
-                <b>Skills</b>
-              </h2>
-              <div className="skills-list">
-                <button className="btn btn-light skill-btn">Python</button>
-                <button className="btn btn-light skill-btn">Django</button>
-                <button className="btn btn-light skill-btn">Html</button>
-                <button className="btn btn-light skill-btn">Django rest FrameWork</button>
-                <button className="btn btn-light skill-btn">CSS</button>
-                <button className="btn btn-light skill-btn">MySql</button>
-                <button className="btn btn-light skill-btn">Bootstrap</button>
-                <button className="btn btn-light skill-btn">React</button>
-                <button className="btn btn-light skill-btn">JavaScript</button>
-                <button className="btn btn-light skill-btn">UiPath</button>
-              </div>
-            </div>
+
+        <div className="col-lg-1"></div>
+
+        {/* Right Side */}
+        <div className="col-lg-5 skills-section">
+          <h2 className="text-light skills-title">
+            <b>Skills</b>
+          </h2>
+
+          <div className="skills-list">
+            <button className="btn btn-light skill-btn">Python</button>
+            <button className="btn btn-light skill-btn">Django</button>
+            <button className="btn btn-light skill-btn">HTML</button>
+            <button className="btn btn-light skill-btn">Django REST Framework</button>
+            <button className="btn btn-light skill-btn">CSS</button>
+            <button className="btn btn-light skill-btn">MySQL</button>
+            <button className="btn btn-light skill-btn">Bootstrap</button>
+            <button className="btn btn-light skill-btn">React</button>
+            <button className="btn btn-light skill-btn">JavaScript</button>
+            <button className="btn btn-light skill-btn">UiPath</button>
+            <button className="btn btn-light skill-btn">RPA</button>
+            <button className="btn btn-light skill-btn">Git</button>
+            <button className="btn btn-light skill-btn">GitHub</button>
           </div>
         </div>
+
       </div>
-    </section>
+
+      {/* Center Button */}
+      <div className="text-center">
+        <a href="#contactdetails">
+          <button className="contact-modern-btn">
+            📩 Let's Connect
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
     {/* timeline */}
 <section 
   id='mytimeline' 
-  style={{ 
-    height: "150vh", 
-    backgroundColor: "#9db2bf",
-    overflowX: "hidden"
-  }} 
+  style={{
+  minHeight: "10vh",
+  backgroundColor: "#9db2bf",
+  overflowX: "hidden",
+  paddingBottom: "550px"
+}}
   className='p-4'
 >
   <div>
@@ -241,6 +337,32 @@ function Index() {
           Intellijohn Labs
         </p>
       </VerticalTimelineElement>
+
+<VerticalTimelineElement
+  className="vertical-timeline-element--work"
+  date="2025-12-05"
+  iconStyle={{ background: "#2a3335", color: "#fff" }}
+  contentStyle={{ color: "#2a3335" }}
+>
+  <h3
+    className="vertical-timeline-element-title"
+    style={{
+      fontFamily: "'Poppins', sans-serif",
+      letterSpacing: "0.1em"
+    }}
+  >
+    Resigned as RPA Developer
+  </h3>
+  <p
+    style={{
+      fontFamily: "'Poppins', sans-serif",
+      letterSpacing: "0.1em"
+    }}
+  >
+    Intellijohn Labs
+  </p>
+</VerticalTimelineElement>
+
     </VerticalTimeline>
   </div>
 </section>
@@ -350,11 +472,20 @@ function Index() {
     <section>
       <div className="text-middle">
         <h3 className="text-middle p-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Thanks for scrolling!</h3>
-        <a href={import.meta.env.BASE_URL + "/pdf/Suhaib_Akther_S.pdf"} download>
-          <button className="btn-resume mb-5" style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
-            Download Resume
-          </button>
-        </a>
+        <a
+  href={`${import.meta.env.BASE_URL}pdf/Suhaib_Akther_S_Resume.pdf`}
+  download="Suhaib_Akther_S.pdf"
+>
+  <button
+    className="btn-resume mb-5"
+    style={{
+      fontFamily: "'Poppins', sans-serif",
+      letterSpacing: "0.1em"
+    }}
+  >
+    Download Resume
+  </button>
+</a>
       </div>
     </section>
   </div>
