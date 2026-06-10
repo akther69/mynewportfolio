@@ -106,7 +106,9 @@ function Index() {
         <div className="row">
           <h3 className="text-center text-light heading hero-title">
   <span className="wave-hand">👋</span>
-  I'm SUHAIB AKTHER S
+ <span className="name-gradient">
+  SUHAIB AKTHER S
+</span>
 </h3>
           <h6 className="text-center text-light subheading">
             I’m a Python-Django full-stack developer and UiPath RPA developer, building web applications and automation solutions with clean and efficient code.
@@ -149,87 +151,74 @@ function Index() {
           </button>
         </div>
       </div>
+
+      <div className="bubble-container">
+  {[...Array(580)].map((_, i) => (
+    <span
+      key={i}
+      className="bubble"
+      style={{
+        left: `${Math.random() * 100}%`,
+        width: `${Math.random() * 3 + 1}px`,
+        height: `${Math.random() * 3 + 1}px`,
+        animationDuration: `${Math.random() * 4 + 4}s`,
+        animationDelay: `${Math.random() * 5}s`,
+      }}
+    />
+  ))}
+</div>
     </section>
 
 
 {/* aboutme */}
 <section id="aboutme" className="aboutme-section">
-  <div className="container">
 
-    <div className="row">
-      <h1 className="text-center text-light aboutme-title">
-        About Me
-      </h1>
+  <div className="container mt-5">
 
-      <h5 className="text-center text-light mt-2 aboutme-subtitle">
-        Discover more about who I am, what I do, and the programming and technological skills I bring to the table.
-      </h5>
-    </div>
+    <div className="about-modern-card">
 
-    <div className="container aboutme-content">
+      <div className="about-profile-badge mb-4">
+        👨‍💻 About Me
+      </div>
 
-      <div className="row">
+      <h3 className="about-role">
+        Python-Django Full Stack Developer & UiPath RPA Developer
+      </h3>
 
-        {/* Left Side */}
-        <div className="col-lg-6 aboutme-details">
-          <h1 className="text-light aboutme-heading">
-            <b>Know More About Me</b>
-          </h1>
+      <p className="about-description">
+        Passionate about building modern web applications and intelligent
+        automation solutions. I specialize in Python, Django, React,
+        REST APIs, MySQL, and UiPath, creating scalable digital products
+        and workflow automations that solve real-world problems.
+      </p>
 
-          <p className="text-light aboutme-text">
-            I'm a Python-Django Full Stack Developer from Nilgiris, Tamil Nadu,
-            with a BE in Computer Science. I specialize in building dynamic web
-            applications, focusing on scalable back-end systems with Django and
-            responsive front-end interfaces.
+      <div className="tech-stack">
 
-            My experience includes working on various projects that have
-            strengthened my problem-solving skills. I also have experience as
-            a UiPath RPA Developer, leveraging automation technologies to
-            streamline workflows and optimize business processes.
-
-            Passionate about continuous learning, I thrive on tackling
-            challenging projects that drive growth and create meaningful impact.
-          </p>
-        </div>
-
-        <div className="col-lg-1"></div>
-
-        {/* Right Side */}
-        <div className="col-lg-5 skills-section">
-          <h2 className="text-light skills-title">
-            <b>Skills</b>
-          </h2>
-
-          <div className="skills-list">
-            <button className="btn btn-light skill-btn">Python</button>
-            <button className="btn btn-light skill-btn">Django</button>
-            <button className="btn btn-light skill-btn">HTML</button>
-            <button className="btn btn-light skill-btn">Django REST Framework</button>
-            <button className="btn btn-light skill-btn">CSS</button>
-            <button className="btn btn-light skill-btn">MySQL</button>
-            <button className="btn btn-light skill-btn">Bootstrap</button>
-            <button className="btn btn-light skill-btn">React</button>
-            <button className="btn btn-light skill-btn">JavaScript</button>
-            <button className="btn btn-light skill-btn">UiPath</button>
-            <button className="btn btn-light skill-btn">RPA</button>
-            <button className="btn btn-light skill-btn">Git</button>
-            <button className="btn btn-light skill-btn">GitHub</button>
-          </div>
-        </div>
+        <span>🐍 Python</span>
+        <span>🎯 Django</span>
+        <span>⚛️ React</span>
+        <span>💻 JavaScript</span>
+        <span>🌐 HTML</span>
+        <span>🎨 CSS</span>
+        <span>🗄️ MySQL</span>
+        <span>🔗 REST API</span>
+        <span>⚙️ UiPath</span>
+        <span>🤖 RPA</span>
+        <span>📦 Git</span>
+        <span>🚀 GitHub</span>
 
       </div>
 
-      {/* Center Button */}
-      <div className="text-center mt-3">
-        <a href="#contactdetails">
-          <button className="contact-modern-btn">
-            📩 Let's Connect
-          </button>
-        </a>
-      </div>
+      <a href="#contactdetails">
+        <button className="contact-modern-btn mt-4">
+          📩 Let's Connect
+        </button>
+      </a>
 
     </div>
+
   </div>
+
 </section>
 
 
@@ -244,7 +233,7 @@ function Index() {
 >
   <div>
     <h1 className="timeline-title">
-  🚀 My Journey
+  My Journey
 </h1>
 
 <p className="timeline-subtitle">
@@ -357,7 +346,7 @@ function Index() {
     <section id="project-section" style={{ backgroundColor: "#dde6ed" }} className="p-1">
   <div className="project-wrapper">
     <h1 className="project-title">
-  🚀 Featured Projects
+   Featured Projects
 </h1>
 
 <p className="project-subtitle">

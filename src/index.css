@@ -52,9 +52,254 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #27374d;
-  padding: 80px 20px;
+
+  background:
+    radial-gradient(circle at top left, #60a5fa 0%, transparent 25%),
+    radial-gradient(circle at bottom right, #7c3aed 0%, transparent 25%),
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #1e293b,
+      #27374d
+    );
+
+  background-size: 200% 200%;
+
+  animation: gradientMove 12s ease infinite;
+
+  overflow: hidden;
+  position: relative;
 }
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: -200px;
+  left: -150px;
+
+  background: rgba(96,165,250,0.2);
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+}
+
+.home-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  bottom: -200px;
+  right: -150px;
+
+  background: rgba(124,58,237,0.2);
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+}
+
+
+
+
+@keyframes fizz {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(
+      20px,
+      -120vh,
+      0
+    );
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+.bubble-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -20px;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.8);
+
+  animation: fizz 10s linear infinite;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Random sizes and positions */
+.bubble:nth-child(1) {
+  left: 5%;
+  width: 6px;
+  height: 6px;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+  left: 12%;
+  width: 10px;
+  height: 10px;
+  animation-duration: 12s;
+}
+
+.bubble:nth-child(3) {
+  left: 18%;
+  width: 4px;
+  height: 4px;
+  animation-duration: 7s;
+}
+
+.bubble:nth-child(4) {
+  left: 25%;
+  width: 8px;
+  height: 8px;
+  animation-duration: 10s;
+}
+
+.bubble:nth-child(5) {
+  left: 35%;
+  width: 12px;
+  height: 12px;
+  animation-duration: 14s;
+}
+
+.bubble:nth-child(6) {
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  animation-duration: 9s;
+}
+
+.bubble:nth-child(7) {
+  left: 55%;
+  width: 9px;
+  height: 9px;
+  animation-duration: 11s;
+}
+
+.bubble:nth-child(8) {
+  left: 65%;
+  width: 6px;
+  height: 6px;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(9) {
+  left: 75%;
+  width: 11px;
+  height: 11px;
+  animation-duration: 13s;
+}
+
+.bubble:nth-child(10) {
+  left: 85%;
+  width: 7px;
+  height: 7px;
+  animation-duration: 10s;
+}
+
+
+
+
+
+
+@keyframes bubblesRise {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-50vh) translateX(20px);
+  }
+
+  100% {
+    transform: translateY(-120vh) translateX(-20px);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+.name-gradient {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #93c5fd,
+    #c4b5fd
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .container {
   max-width: 1200px;
@@ -148,7 +393,7 @@ button:hover {
 .aboutme-section {
   min-height: 100vh;
   background-color: #526d82;
-  padding: 20px 0;
+  padding: 30px 0px 0px 0px;
 }
 
 .aboutme-title {
@@ -201,10 +446,21 @@ button:hover {
 }
 
 .skill-btn {
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.1em;
+  background: #0f172a;
+  color: white;
+  border: 1px solid #334155;
+  border-radius: 50px;
   padding: 1rem 1.5rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.skill-btn:hover {
+  background: #000;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 /* Responsive Design */
@@ -965,19 +1221,26 @@ html {
   background: linear-gradient(
     to bottom,
     #27374d,
-    #526d82,
+    #60a5fa,
     #27374d
   ) !important;
+}
+.vertical-timeline-element-date {
+  color: #111827 !important;
+  font-size: 0.95rem;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {
   .timeline-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    line-height: normal;
   }
 
   .timeline-subtitle {
     font-size: 0.95rem;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 }
 
@@ -1241,5 +1504,236 @@ html {
   .video-box {
     border-radius: 10px;
     margin: 15px;
+    margin-left: 10px;
   }
+}
+
+.aboutme-details,
+.skills-section {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.aboutme-details:hover,
+.skills-section:hover {
+  transform: translateY(-5px);
+}
+
+.contact-modern-btn {
+  background: #000;
+  color: white;
+  border: 1px solid #333;
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-modern-btn:hover {
+  transform: translateY(-4px);
+  background: #111;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.about-hero-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-badge {
+  background: #000;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+.about-main-title {
+  margin-top: 25px;
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+}
+
+.about-main-title span {
+  color: #93c5fd;
+}
+
+.about-role {
+  color: white;
+  margin-top: 15px;
+}
+
+.about-description {
+  color: rgba(255,255,255,0.8);
+  max-width: 700px;
+  margin: 25px auto;
+  line-height: 1.8;
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.tech-stack-container span {
+  background: #0f172a;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 50px;
+  border: 1px solid #334155;
+}
+
+.about-modern-card {
+  max-width: 950px;
+  margin: auto;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border-radius: 30px;
+  padding: 60px 40px;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.15);
+
+  transition: all 0.3s ease;
+}
+
+.about-modern-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-profile-badge {
+  display: inline-block;
+
+  background: #27374d;
+  color: white;
+
+  padding: 10px 22px;
+  border-radius: 50px;
+
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.about-name {
+  margin-top: 25px;
+
+  font-size: 3.5rem;
+  font-weight: 800;
+
+  color: #1e293b;
+
+  letter-spacing: -1px;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+.about-name span {
+  color: #2563eb;
+}
+
+.about-role {
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  color: #475569;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+.about-description {
+  max-width: 750px;
+  margin: auto;
+
+  color: #64748b;
+
+  font-size: 1.05rem;
+  line-height: 2;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.tech-stack {
+  margin-top: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tech-stack span {
+  background: white;
+
+  color: #27374d;
+
+  padding: 12px 20px;
+
+  border-radius: 50px;
+
+  border: 1px solid #dbeafe;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.tech-stack span:hover {
+  background: #27374d;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.timeline-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #334155;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.vertical-timeline-element-content {
+  background: rgba(255,255,255,0.95) !important;
+  border-radius: 25px !important;
+  border: none !important;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.12) !important;
+
+  transition: all 0.3s ease;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.18) !important;
 }
