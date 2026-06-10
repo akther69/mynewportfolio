@@ -154,11 +154,11 @@ function Index() {
   <div className="container">
 
     <div className="row">
-      <h1 className="text-center mt-5 text-light aboutme-title">
+      <h1 className="text-center text-light aboutme-title">
         About Me
       </h1>
 
-      <h5 className="text-center text-light mt-4 mb-3 aboutme-subtitle">
+      <h5 className="text-center text-light mt-2 aboutme-subtitle">
         Discover more about who I am, what I do, and the programming and technological skills I bring to the table.
       </h5>
     </div>
@@ -217,7 +217,7 @@ function Index() {
       </div>
 
       {/* Center Button */}
-      <div className="text-center">
+      <div className="text-center mt-3">
         <a href="#contactdetails">
           <button className="contact-modern-btn">
             📩 Let's Connect
