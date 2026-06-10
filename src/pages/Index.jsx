@@ -12,8 +12,11 @@ import { faArrowUp,faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Index() {
   function scrollToTop() {
-    document.getElementById("navbar").scrollIntoView({ behavior: "smooth" });
-  }
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
   function scrollToContact() {
     document.getElementById("contactdetails").scrollIntoView({ behavior: "smooth" });
   }
@@ -240,18 +243,13 @@ function Index() {
   className='p-4'
 >
   <div>
-    <h1 
-      className='text-center p-4' 
-      style={{ 
-        color: "#2a3335", 
-        letterSpacing: "0.1em", 
-        lineHeight: "4rem", 
-        fontSize: "4.5rem", 
-        fontWeight: "bold"
-      }}
-    >
-      My Time Line
-    </h1>
+    <h1 className="timeline-title">
+  🚀 My Journey
+</h1>
+
+<p className="timeline-subtitle">
+  From Computer Science graduate to Full-Stack Developer and UiPath RPA Developer.
+</p>
 
     <VerticalTimeline>
       <VerticalTimelineElement
@@ -264,7 +262,7 @@ function Index() {
           className="vertical-timeline-element-title" 
           style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
         >
-          Graduated; B.E in Computer Science And Engineering
+          🎓 Graduated – B.E Computer Science & Engineering
         </h3>
         <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
           Hindusthan College of Engineering And Technology Coimbatore
@@ -281,7 +279,7 @@ function Index() {
           className="vertical-timeline-element-title" 
           style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
         >
-          Started Internship as Python-web Development Expert
+          💻 Started Python Full-Stack Internship
         </h3>
         <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
           Joined Luminar Technolab
@@ -297,7 +295,7 @@ function Index() {
           className="vertical-timeline-element-title" 
           style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
         >
-          Completed Internship
+          🏆 Successfully Completed Internship
         </h3>
         <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
           Luminar Technolab
@@ -314,7 +312,7 @@ function Index() {
           className="vertical-timeline-element-title" 
           style={{ color: "#2a3335", fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
         >
-          Joined as RPA Developer
+          🤖 Joined as UiPath RPA Developer
         </h3>
         <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
           Intellijohn Labs
@@ -334,7 +332,7 @@ function Index() {
       letterSpacing: "0.1em"
     }}
   >
-    Resigned as RPA Developer
+    📌 Completed Tenure as UiPath RPA Developer
   </h3>
   <p
     style={{
@@ -356,209 +354,327 @@ function Index() {
 
 
 
-    <section id="project-section" style={{ backgroundColor: "#dde6ed" }} className="p-3">
+    <section id="project-section" style={{ backgroundColor: "#dde6ed" }} className="p-1">
   <div className="project-wrapper">
-    <h1 className="text-middle my-5" style={{ letterSpacing: "0.1em", lineHeight: "4rem", fontSize: "4.5rem", fontWeight: "bold" }}>
-      Projects
-    </h1>
+    <h1 className="project-title">
+  🚀 Featured Projects
+</h1>
+
+<p className="project-subtitle">
+  A collection of web applications, automation solutions, and personal projects showcasing my skills in Python, Django, React, and UiPath.
+</p>
 
     {/* Project 1: Pix & Words */}
-    <div className="project-item flex mb-3">
-      <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
-        <video className="project-video" controls autoPlay loop muted>
-          <source src={import.meta.env.BASE_URL + "/video/Pix & Words.mp4"} type="video/mp4" />
-        </video>
-      </div>
-      <div className="project-desc" style={{ flex: "0 0 50%", fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em", marginTop: "60px" }}>
-        <h1>Pix & Words</h1>
-        <p>
-          Pix & Words is a social media platform where users can share images, videos, and text posts. It features likes, comments, real-time updates, and customizable profiles for a personalized and engaging experience.
-        </p>
-        <a href="https://github.com/akther69/pix-words.git" target="_blank" rel="noopener noreferrer">
-          <button className="btn-github">View on GitHub</button>
-        </a>
-      </div>
+<div className="project-item">
+  <div className="video-display video-box">
+
+    <div className="video-header">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <video className="project-video" controls autoPlay loop muted>
+      <source
+        src={import.meta.env.BASE_URL + "/video/Pix & Words.mp4"}
+        type="video/mp4"
+      />
+    </video>
+
+  </div>
+
+  <div className="project-desc">
+    <h1>📸 Pix & Words</h1>
+
+    <p>
+      Pix & Words is a social media platform where users can share images,
+      videos, and text posts. It features likes, comments, real-time updates,
+      and customizable profiles for a personalized and engaging experience.
+    </p>
+
+    <a
+      href="https://github.com/akther69/pix-words.git"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="btn-github">
+        View on GitHub
+      </button>
+    </a>
+  </div>
+</div>
 
     {/* Project 2: Venus Fancy */}
-    <div className="project-item flex mb-3">
-      <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
-        <video className="project-video" controls autoPlay loop muted>
-          <source src={import.meta.env.BASE_URL + "/video/VenusFancy.mp4"} type="video/mp4" />
-        </video>
-      </div>
-      <div className="project-desc" style={{ flex: "0 0 50%", fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em", marginTop: "60px" }}>
-        <h1>Venus Fancy</h1>
-        <p>
-          The web application is an e-commerce platform for purchasing accessories like necklaces, bangles, and rings. Built with Django, Tailwind CSS, and DevUI, it offers a smooth, user-friendly shopping experience with essential e-commerce features.
-        </p>
-        <a href="https://github.com/akther69/venus-fancy.git" target="_blank" rel="noopener noreferrer">
-          <button className="btn-github">View on GitHub</button>
-        </a>
-      </div>
+    {/* Project 2: Venus Fancy */}
+<div className="project-item">
+  <div className="video-display video-box">
+
+    <div className="video-header">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <video className="project-video" controls autoPlay loop muted>
+      <source
+        src={import.meta.env.BASE_URL + "/video/VenusFancy.mp4"}
+        type="video/mp4"
+      />
+    </video>
+
+  </div>
+
+  <div className="project-desc">
+    <h1>🛍️ Venus Fancy</h1>
+
+    <p>
+      Venus Fancy is a modern e-commerce platform for purchasing fashion
+      accessories such as necklaces, bangles, earrings, rings, and more.
+      Built using Django, Tailwind CSS, and DevUI, it delivers a seamless
+      shopping experience with secure authentication, cart management,
+      order processing, and responsive design.
+    </p>
+
+    <a
+      href="https://github.com/akther69/venus-fancy.git"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="btn-github">
+        View on GitHub
+      </button>
+    </a>
+  </div>
+</div>
 
     {/* Project 3: To-Do Web Application */}
-    <div className="project-item flex mb-3">
-      <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
-        <video className="project-video" controls autoPlay loop muted>
-          <source src={import.meta.env.BASE_URL + "/video/To_do.mp4"} type="video/mp4" />
-        </video>
-      </div>
-      <div className="project-desc" style={{ flex: "0 0 50%", fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em", marginTop: "60px" }}>
-        <h1>To-Do Web Application</h1>
-        <p>
-          A task management app with login functionality, enabling users to create, update, and delete tasks. Developed using Django, HTML, CSS, and SQLite for efficient task tracking.
-        </p>
-        <a href="https://github.com/akther69/todo.git" target="_blank" rel="noopener noreferrer">
-          <button className="btn-github">View on GitHub</button>
-        </a>
-      </div>
+    {/* Project 3: To-Do Web Application */}
+<div className="project-item">
+  <div className="video-display video-box">
+
+    <div className="video-header">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <video className="project-video" controls autoPlay loop muted>
+      <source
+        src={import.meta.env.BASE_URL + "/video/To_do.mp4"}
+        type="video/mp4"
+      />
+    </video>
+
+  </div>
+
+  <div className="project-desc">
+    <h1>✅ To-Do Web Application</h1>
+
+    <p>
+      A productivity-focused task management application that allows users
+      to create, update, organize, and delete tasks efficiently. Developed
+      using Django, HTML, CSS, and SQLite, the application includes user
+      authentication and provides a simple and intuitive interface for
+      managing daily activities.
+    </p>
+
+    <a
+      href="https://github.com/akther69/todo.git"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="btn-github">
+        View on GitHub
+      </button>
+    </a>
+  </div>
+</div>
+
 
     {/* Project 4: Expense Manager */}
-    <div className="project-item flex mb-3">
-      <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
-        <video className="project-video" controls autoPlay loop muted>
-          <source src={import.meta.env.BASE_URL + "/video/Expense Manager.mp4"} type="video/mp4" />
-        </video>
-      </div>
-      <div className="project-desc" style={{ flex: "0 0 50%", fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em", marginTop: "60px" }}>
-        <h1>Expense Manager</h1>
-        <p>
-          An expense tracking app that visualizes monthly spending with graphs by category and payment method. It includes a REST API and email/SMS notifications to help users stay on top of their finances.
-        </p>
-        <a href="https://github.com/akther69/expense-manager.git" target="_blank" rel="noopener noreferrer">
-          <button className="btn-github">View on GitHub</button>
-        </a>
-      </div>
+    {/* Project 4: Expense Manager */}
+<div className="project-item">
+  <div className="video-display video-box">
+
+    <div className="video-header">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <video className="project-video" controls autoPlay loop muted>
+      <source
+        src={import.meta.env.BASE_URL + "/video/Expense Manager.mp4"}
+        type="video/mp4"
+      />
+    </video>
+
+  </div>
+
+  <div className="project-desc">
+    <h1>💰 Expense Manager</h1>
+
+    <p>
+      Expense Manager is a personal finance tracking application designed
+      to monitor monthly spending through interactive charts and reports.
+      Built with Django and Django REST Framework, it includes category-wise
+      expense analysis, payment method tracking, API integration, and email
+      or SMS notifications for enhanced financial management.
+    </p>
+
+    <a
+      href="https://github.com/akther69/expense-manager.git"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="btn-github">
+        View on GitHub
+      </button>
+    </a>
+  </div>
+</div>
 
     {/* Project 5: Netflix Clone */}
-    <div className="project-item flex mb-3">
-      <div className="video-display video-box" style={{ flex: "0 0 50%", paddingRight: "20px" }}>
-        <video className="project-video" controls autoPlay loop muted>
-          <source src={import.meta.env.BASE_URL + "/video/Netflix Clone.mp4"} type="video/mp4" />
-        </video>
-      </div>
-      <div className="project-desc" style={{ flex: "0 0 50%", fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em", marginTop: "60px" }}>
-        <h1>Netflix Clone (Front-End)</h1>
-        <p>
-          A front-end Netflix clone built to showcase streaming UI, featuring an attractive layout with browsing and preview options. Designed to replicate the user experience of a streaming platform.
-        </p>
-        <a href="https://github.com/akther69/netflix.git" target="_blank" rel="noopener noreferrer">
-          <button className="btn-github">View on GitHub</button>
-        </a>
-      </div>
+    {/* Project 5: Netflix Clone */}
+<div className="project-item">
+  <div className="video-display video-box">
+
+    <div className="video-header">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <section>
-      <div className="text-middle">
-        <h3 className="text-middle p-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Thanks for scrolling!</h3>
-        <a
-  href={`${import.meta.env.BASE_URL}pdf/Suhaib_Akther_S_Resume.pdf`}
-  download="Suhaib_Akther_S.pdf"
->
-  <button
-    className="btn-resume mb-5"
-    style={{
-      fontFamily: "'Poppins', sans-serif",
-      letterSpacing: "0.1em"
-    }}
-  >
-    Download Resume
-  </button>
-</a>
-      </div>
-    </section>
+    <video className="project-video" controls autoPlay loop muted>
+      <source
+        src={import.meta.env.BASE_URL + "/video/Netflix Clone.mp4"}
+        type="video/mp4"
+      />
+    </video>
+
+  </div>
+
+  <div className="project-desc">
+    <h1>🎬 Netflix Clone (Front-End)</h1>
+
+    <p>
+      A visually appealing front-end Netflix clone created to replicate the
+      user experience of a modern streaming platform. Developed using HTML,
+      CSS, and JavaScript, it features responsive layouts, movie showcase
+      sections, interactive UI elements, and a sleek design inspired by
+      the original Netflix interface.
+    </p>
+
+    <a
+      href="https://github.com/akther69/netflix.git"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="btn-github">
+        View on GitHub
+      </button>
+    </a>
+  </div>
+</div>
+
+   <section className="resume-section">
+  <div className="text-center">
+
+    <h2 className="resume-title">
+      🚀 Thanks for Scrolling!
+    </h2>
+
+    <p className="resume-subtitle">
+      Interested in my work? Download my resume and let's build something amazing together.
+    </p>
+
+    <a
+      href={`${import.meta.env.BASE_URL}pdf/Suhaib_Akther_S_Resume.pdf`}
+      download="Suhaib_Akther_S_Resume.pdf"
+    >
+      <button className="resume-download-btn">
+        📄 Download Resume
+      </button>
+    </a>
+
+  </div>
+</section>
+
   </div>
 </section>
 
 
 
 
-    {/* contact info */}
-    <section id='contactdetails'>
-            <div className="container my-5">
-                <div className="row">
-                    <div className="col-3"></div>
-                    <div className="col-6 text-center">
-                        <h1 
-                            className='text-center my-3' 
-                            style={{ 
-                                letterSpacing: "0.1em", 
-                                lineHeight: "2rem",
-                                fontSize: "2.5rem",
-                                fontWeight: "bold"
-                            }}
-                        >
-                            Contact Details
-                        </h1>
+{/* Contact Section */}
+<section id="contactdetails" className="contact-section">
+  <div className="container">
 
-                        {/* Social Media Icons */}
-                        <div className="flex space-x-4 mt-5 justify-center">
-                            {/* LinkedIn icon */}
-                            <a href="https://www.linkedin.com/in/suhaib-akther-s-baa753233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKTmeq42WTQ%2BnuY7ythGSuA%3D%3D" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon 
-                                    icon={faLinkedin} 
-                                    size="2x" 
-                                    className="mx-2 text-primary hover:text-blue-800" 
-                                />
-                            </a>
+    <div className="text-center">
 
-                            {/* GitHub icon */}
-                            <a href="https://github.com/akther69" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon 
-                                    icon={faGithub} 
-                                    size="2x" 
-                                    className="mx-2 text-dark hover:text-gray-700" 
-                                />
-                            </a>
+      <h1 className="contact-title">
+        📬 Let's Connect
+      </h1>
 
-                            {/* Mail icon */}
-                            <a href="mailto:ssuhaibakther12@gmail.com" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon 
-                                    icon={faEnvelope} 
-                                    size="2x" 
-                                    className="mx-2 text-secondary hover:text-red-800" 
-                                />
-                            </a>
+      <p className="contact-subtitle">
+        Open to Full-Stack Development, UiPath RPA opportunities,
+        collaborations, and exciting projects.
+      </p>
 
-                            {/* Phone icon */}
-                            <a href="tel:+917598488180">
-                                <FontAwesomeIcon 
-                                    icon={faPhone} 
-                                    size="2x" 
-                                    className="mx-2 text-primary hover:text-green-800" 
-                                />
-                            </a>
+      <div className="contact-icons">
 
-                            {/* WhatsApp icon */}
-                            <a href="https://wa.me/qr/XMZHBPXILTBTF1" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon 
-                                    icon={faWhatsapp} 
-                                    size="2x" 
-                                    className="mx-2 text-success hover:text-green-700" 
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-3"></div>
-                </div>
-            </div>
-        </section>
+        <a
+          href="https://www.linkedin.com/in/suhaib-akther-s-baa753233"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-icon-card"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="https://github.com/akther69"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-icon-card"
+        >
+          <FontAwesomeIcon icon={faGithub} />
+          <span>GitHub</span>
+        </a>
+
+        <a
+          href="mailto:ssuhaibakther12@gmail.com"
+          className="contact-icon-card"
+        >
+          <FontAwesomeIcon icon={faEnvelope} />
+          <span>Email</span>
+        </a>
+
+        <a
+          href="tel:+917598488180"
+          className="contact-icon-card"
+        >
+          <FontAwesomeIcon icon={faPhone} />
+          <span>Call</span>
+        </a>
+
+        <a
+          href="https://wa.me/917598488180"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-icon-card"
+        >
+          <FontAwesomeIcon icon={faWhatsapp} />
+          <span>WhatsApp</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </div>
   )
 }
