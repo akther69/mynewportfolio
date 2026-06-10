@@ -101,21 +101,8 @@ function Index() {
     <section id="home" className="home-section">
       <div className="container">
         <div className="row">
-          <h3
-  className="text-center text-light heading"
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: "12px"
-  }}
->
-  <span
-    className="wave-hand"
-    style={{ fontSize: "5rem" }}
-  >
-    👋
-  </span>
+          <h3 className="text-center text-light heading hero-title">
+  <span className="wave-hand">👋</span>
   I'm SUHAIB AKTHER S
 </h3>
           <h6 className="text-center text-light subheading">
@@ -163,9 +150,7 @@ function Index() {
 
 
 {/* aboutme */}
-<section id="aboutme" className="aboutme-section"  style={{
-    paddingBottom: "250px"
-  }}>
+<section id="aboutme" className="aboutme-section">
   <div className="container">
 
     <div className="row">
@@ -246,14 +231,12 @@ function Index() {
 
 
     {/* timeline */}
-<section 
-  id='mytimeline' 
+<section
+  id='mytimeline'
   style={{
-  minHeight: "10vh",
-  backgroundColor: "#9db2bf",
-  overflowX: "hidden",
-  paddingBottom: "550px"
-}}
+    backgroundColor: "#9db2bf",
+    overflowX: "hidden"
+  }}
   className='p-4'
 >
   <div>
