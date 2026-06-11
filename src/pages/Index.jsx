@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "react-vertical-timeline-component/style.min.css";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +11,7 @@ import { faArrowUp,faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 
 function Index() {
+  const [activeTab, setActiveTab] = useState("django");
   function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -353,6 +354,29 @@ function Index() {
   A collection of web applications, automation solutions, and personal projects showcasing my skills in Python, Django, React, and UiPath.
 </p>
 
+<p className="project-category-label">
+  Choose a specialization
+</p>
+
+<div className="project-tabs">
+  <button
+    className={`tab-btn ${activeTab === "django" ? "active-tab" : ""}`}
+    onClick={() => setActiveTab("django")}
+  >
+    🐍 Python Django Full Stack
+  </button>
+
+  <button
+    className={`tab-btn ${activeTab === "uipath" ? "active-tab" : ""}`}
+    onClick={() => setActiveTab("uipath")}
+  >
+    🤖 UiPath RPA
+  </button>
+</div>
+
+{activeTab === "django" && (
+<>
+
     {/* Project 1: Pix & Words */}
 <div className="project-item">
   <div className="video-display video-box">
@@ -565,6 +589,95 @@ function Index() {
     </a>
   </div>
 </div>
+</>
+)}
+{activeTab === "uipath" && (
+
+<div className="uipath-projects">
+
+  <div className="uipath-card">
+    <div className="uipath-badge">UiPath RPA</div>
+
+    <h2>📡 Kerala Vision Automation</h2>
+
+    <p>
+      Enterprise automation platform developed for Kerala Vision's
+      Cable TV and Broadband services. Automated customer support,
+      issue reporting, online payments, technician assignment,
+      recharge reminders, ONT backups, and WhatsApp-based service requests.
+    </p>
+
+    <div className="tech-stack-rpa">
+      <span>UiPath</span>
+      <span>WhatsApp API</span>
+      <span>Python</span>
+      <span>Excel</span>
+      <span>Google Sheets</span>
+    </div>
+  </div>
+
+  <div className="uipath-card">
+    <div className="uipath-badge">UiPath RPA</div>
+
+    <h2>👨‍💼 Recruitment Process Automation</h2>
+
+    <p>
+      Automated end-to-end recruitment workflow including resume
+      extraction, candidate ranking, document processing,
+      shortlisting, and automated communication through
+      Email and WhatsApp integrations.
+    </p>
+
+    <div className="tech-stack-rpa">
+      <span>UiPath</span>
+      <span>Excel</span>
+      <span>Email Automation</span>
+      <span>Python</span>
+    </div>
+  </div>
+
+  <div className="uipath-card">
+    <div className="uipath-badge">Finance Automation</div>
+
+    <h2>💳 Payment Reconciliation Bot</h2>
+
+    <p>
+      Automated loan memo generation with QR-code payments,
+      payment verification, bank statement reconciliation,
+      customer acknowledgements, and audit-ready reporting.
+    </p>
+
+    <div className="tech-stack-rpa">
+      <span>UiPath</span>
+      <span>WhatsApp API</span>
+      <span>QR Code API</span>
+      <span>Excel</span>
+    </div>
+  </div>
+
+  <div className="uipath-card">
+    <div className="uipath-badge">Cinema Automation</div>
+
+    <h2>🎬Cinemas Automation Suite</h2>
+
+    <p>
+      Comprehensive DCR automation solution including Email Fetch,
+      OTP Automation, PDF Data Extraction, Software Entry,
+      Reconciliation, WhatsApp Integration, and DCR Tracking Bots.
+    </p>
+
+    <div className="tech-stack-rpa">
+      <span>UiPath</span>
+      <span>OCR</span>
+      <span>AI Extraction</span>
+      <span>Google Sheets</span>
+      <span>WhatsApp</span>
+    </div>
+  </div>
+
+</div>
+
+)}
 
    <section className="resume-section">
   <div className="text-center">
