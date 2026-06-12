@@ -174,6 +174,77 @@ function Index() {
 {/* aboutme */}
 <section id="aboutme" className="aboutme-section">
 
+  <div className="scribble-bg">
+  <svg viewBox="0 0 1600 1000">
+
+    {/* Large flowing waves */}
+    <path
+      d="M0 180 C200 50 400 350 700 180 S1200 50 1600 180"
+      className="scribble-wave"
+    />
+
+    <path
+      d="M0 750 C250 550 500 950 900 750 S1300 500 1600 750"
+      className="scribble-wave delay1"
+    />
+
+    {/* Huge loop */}
+    <path
+      d="M200 500
+         C100 250 400 100 600 300
+         C800 500 500 800 300 650
+         C100 500 200 350 400 450"
+      className="scribble-loop"
+    />
+
+    {/* Circle sketches */}
+    <circle cx="180" cy="220" r="70" className="scribble-ring" />
+    <circle cx="1400" cy="650" r="90" className="scribble-ring" />
+
+    {/* Zigzag */}
+    <path
+      d="M1150 200
+         L1200 150
+         L1250 200
+         L1300 150
+         L1350 200"
+      className="scribble-zig"
+    />
+
+    {/* Arrow */}
+    <path
+      d="M300 850 L500 750"
+      className="scribble-arrow"
+    />
+
+    <path
+      d="M500 750 L460 740"
+      className="scribble-arrow"
+    />
+
+    <path
+      d="M500 750 L470 790"
+      className="scribble-arrow"
+    />
+
+    {/* Star */}
+    <path
+      d="M1200 820
+         L1215 860
+         L1260 860
+         L1225 885
+         L1240 930
+         L1200 900
+         L1160 930
+         L1175 885
+         L1140 860
+         L1185 860 Z"
+      className="scribble-star"
+    />
+
+  </svg>
+</div>
+
   <div className="container mt-5">
 
     <div className="about-modern-card">
@@ -193,22 +264,38 @@ function Index() {
         and workflow automations that solve real-world problems.
       </p>
 
-      <div className="tech-stack">
+      <div className="tech-marquee">
+  <div className="tech-track">
 
-        <span>🐍 Python</span>
-        <span>🎯 Django</span>
-        <span>⚛️ React</span>
-        <span>💻 JavaScript</span>
-        <span>🌐 HTML</span>
-        <span>🎨 CSS</span>
-        <span>🗄️ MySQL</span>
-        <span>🔗 REST API</span>
-        <span>⚙️ UiPath</span>
-        <span>🤖 RPA</span>
-        <span>📦 Git</span>
-        <span>🚀 GitHub</span>
+    <span>🐍 Python</span>
+    <span>🎯 Django</span>
+    <span>⚛️ React</span>
+    <span>💻 JavaScript</span>
+    <span>🌐 HTML</span>
+    <span>🎨 CSS</span>
+    <span>🗄️ MySQL</span>
+    <span>🔗 REST API</span>
+    <span>⚙️ UiPath</span>
+    <span>🤖 RPA</span>
+    <span>📦 Git</span>
+    <span>🚀 GitHub</span>
 
-      </div>
+    {/* duplicate for smooth loop */}
+    <span>🐍 Python</span>
+    <span>🎯 Django</span>
+    <span>⚛️ React</span>
+    <span>💻 JavaScript</span>
+    <span>🌐 HTML</span>
+    <span>🎨 CSS</span>
+    <span>🗄️ MySQL</span>
+    <span>🔗 REST API</span>
+    <span>⚙️ UiPath</span>
+    <span>🤖 RPA</span>
+    <span>📦 Git</span>
+    <span>🚀 GitHub</span>
+
+  </div>
+</div>
 
       <a href="#contactdetails">
         <button className="contact-modern-btn mt-4">
@@ -223,119 +310,66 @@ function Index() {
 </section>
 
 
-    {/* timeline */}
-<section
-  id='mytimeline'
-  style={{
-    backgroundColor: "#9db2bf",
-    overflowX: "hidden"
-  }}
-  className='p-4'
->
-  <div>
-    <h1 className="timeline-title">
-  My Journey
-</h1>
+{/* Timeline */}
+<section id="mytimeline" className="journey-section">
 
-<p className="timeline-subtitle">
-  From Computer Science graduate to Full-Stack Developer and UiPath RPA Developer.
-</p>
+  <h1 className="timeline-title">
+    My Journey
+  </h1>
 
-    <VerticalTimeline>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2024-05-22"
-        iconStyle={{ background: "#2a3335", color: "#2a3335" }}
-        contentStyle={{ color: "#2a3335" }}
-      >
-        <h3 
-          className="vertical-timeline-element-title" 
-          style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
-        >
-          🎓 Graduated – B.E Computer Science & Engineering
-        </h3>
-        <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
-          Hindusthan College of Engineering And Technology Coimbatore
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2024-03-21"
-        iconStyle={{ background: "#2a3335", color: "#fff" }}
-        contentStyle={{ color: "#2a3335" }}
-      >
-        <h3 
-          className="vertical-timeline-element-title" 
-          style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
-        >
-          💻 Started Python Full-Stack Internship
-        </h3>
-        <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
-          Joined Luminar Technolab
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2024-11-18"
-        iconStyle={{ background: "#2a3335", color: "#fff" }}
-      >
-        <h3 
-          className="vertical-timeline-element-title" 
-          style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
-        >
-          🏆 Successfully Completed Internship
-        </h3>
-        <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
-          Luminar Technolab
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2024-11-21"
-        iconStyle={{ background: "#2a3335" }}
-        contentStyle={{ color: "#2a3335" }}
-      >
-        <h3 
-          className="vertical-timeline-element-title" 
-          style={{ color: "#2a3335", fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}
-        >
-          🤖 Joined as UiPath RPA Developer
-        </h3>
-        <p style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: "0.1em" }}>
-          Intellijohn Labs
-        </p>
-      </VerticalTimelineElement>
-
-<VerticalTimelineElement
-  className="vertical-timeline-element--work"
-  date="2025-12-05"
-  iconStyle={{ background: "#2a3335", color: "#fff" }}
-  contentStyle={{ color: "#2a3335" }}
->
-  <h3
-    className="vertical-timeline-element-title"
-    style={{
-      fontFamily: "'Poppins', sans-serif",
-      letterSpacing: "0.1em"
-    }}
-  >
-    📌 Completed Tenure as UiPath RPA Developer
-  </h3>
-  <p
-    style={{
-      fontFamily: "'Poppins', sans-serif",
-      letterSpacing: "0.1em"
-    }}
-  >
-    Intellijohn Labs
+  <p className="timeline-subtitle">
+    From Computer Science Graduate to Full Stack Developer and UiPath RPA Developer.
   </p>
-</VerticalTimelineElement>
 
-    </VerticalTimeline>
+  <div className="journey-list">
+
+    <div className="journey-item">
+      <div className="journey-icon">💻</div>
+      <div className="journey-content">
+        <h3>Started Python Full Stack Internship</h3>
+        <p>Luminar Technolab</p>
+        <span>March 2024</span>
+      </div>
+    </div>
+
+    <div className="journey-item">
+      <div className="journey-icon">🎓</div>
+      <div className="journey-content">
+        <h3>Graduated</h3>
+        <p>B.E Computer Science & Engineering</p>
+        <span>May 2024</span>
+      </div>
+    </div>
+
+    <div className="journey-item">
+      <div className="journey-icon">🏆</div>
+      <div className="journey-content">
+        <h3>Successfully Completed Internship</h3>
+        <p>Luminar Technolab</p>
+        <span>November 2024</span>
+      </div>
+    </div>
+
+    <div className="journey-item">
+      <div className="journey-icon">🤖</div>
+      <div className="journey-content">
+        <h3>Joined as UiPath RPA Developer</h3>
+        <p>Intellijohn Labs</p>
+        <span>November 2024</span>
+      </div>
+    </div>
+
+    <div className="journey-item">
+      <div className="journey-icon">📌</div>
+      <div className="journey-content">
+        <h3>Successfully Completed Tenure</h3>
+        <p>Intellijohn Labs</p>
+        <span>December 2025</span>
+      </div>
+    </div>
+
   </div>
+
 </section>
 
 
