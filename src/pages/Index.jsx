@@ -364,7 +364,7 @@ function Index() {
       <div className="journey-content">
         <h3>Successfully Completed Tenure</h3>
         <p>Intellijohn Labs</p>
-        <span>December 2025</span>
+        <span>August 2026</span>
       </div>
     </div>
 
