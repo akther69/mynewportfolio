@@ -51,8 +51,8 @@ function Index() {
         alt="Profile"
         className="rounded-circle"
         style={{
-          width: "45px",
-          height: "45px",
+          width: "50px",
+          height: "60px",
           objectFit: "cover",
           border: "2px solid #3b82f6"
         }}
